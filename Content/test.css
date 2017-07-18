@@ -1,0 +1,147 @@
+﻿body {
+    background-color: #FFF8DC;
+}
+
+/* top navbar */
+.navbar-fixed-top {
+    background-color: #A0522D;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFF8DC;
+}
+
+/* chat area */
+div ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.chat {
+    margin-top: 0px;
+    padding-top: 10px;
+    height: calc(100% - 101px);
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    overflow: auto;
+}
+
+.chat-user {
+    margin: 2px;
+    width: 80%;
+    display: inline-flexbox;
+    float: right;
+}
+
+.chat-reply {
+    margin: 2px;
+    width: 80%;
+    display: inline;
+    float: left;
+}
+
+.circle {
+    float: left;
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: #A0522D;
+}
+
+.bubble {
+    border:1.2px #666 solid;
+    border-radius:10px;
+    width: auto;
+    display: flexbox;
+    float: right;
+    margin: 0;
+    margin-right: 10px;
+    background-color:#FFE4C4;
+}
+
+.bubble-reply {
+    border:1.2px #CD853F solid;
+    border-radius:10px;
+    width: auto;
+    display: flexbox;
+    float: left;
+    margin: 0;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.bubble p {
+    display: block;
+    margin:2px;
+    word-break:break-all;
+}
+
+.bubble-reply p {
+    display: block;
+    margin:2px;
+    word-break:break-all;
+}
+
+
+/* bottom navbar */
+form {
+    overflow: hidden;
+    height: 51px;
+}
+
+.submit {
+   margin: 0;
+   border: none;
+   width: 51px;
+   height: 51px;
+   display: block;
+   background-color: #A0522D;
+   float: right;
+}
+
+.tri {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #ffeccc;
+    display: block;
+    margin: 15px;
+    margin-left:18px;
+}
+
+.text-area {
+    margin: 0;
+    width: calc(100% - 52px);
+    float: left;
+    align-items:stretch;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.btn-area {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.textbox {
+    margin: auto;
+    border: 2px solid #808080;
+    background-color: #FFF;
+    height: 60%;
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-top : 10px;
+    vertical-align:middle;
+}
