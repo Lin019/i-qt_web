@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-html h1,h2,h3,h4,h5,h6, p{
+html h1,h2,h3,h4,h5,h6, p, label{
     font-family: Roboto, 'Microsoft JhengHei';
 }
 
@@ -152,7 +152,6 @@ ul {
 .content:after {
     content: "";
     background: url('/Images/bg_test.jpg');
-    background-color: rgba(0,0,0,1);
     background-attachment: fixed;
     background-position: center;  
     background-repeat:no-repeat;
@@ -163,7 +162,7 @@ ul {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1; 
+    z-index: 0; 
 }
 
 li.col img {
@@ -179,6 +178,82 @@ img.center {
     margin: 0 auto;
 }
 /* end content*/
+
+/* form*/
+#form-bg {
+    position:absolute;
+    height: 600px;
+    min-width: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    display: block;
+    z-index: -1;
+}
+.form {
+    text-align: center;
+}
+.form .container{
+    background-color: #ddd;
+}
+.form ul {
+    width: 100%;
+}
+.form ul li{
+    clear: both;
+    width: 100%;
+}
+.form-group label{
+    float: left;
+    color: #333;
+    font-weight: 400;
+}
+.form-group {
+    overflow: hidden;
+    margin: auto;
+}
+div.form-group *{
+    display: inline-block;
+    float:left;
+    margin-right: 10px;
+}
+div.form-group label{
+    margin-bottom: 0;
+}
+.input-group.date {
+    display: flex;
+    width: 100%;
+}
+.input-group.date *{
+    float: left;
+    margin: 0px;
+    width: auto;
+}
+.input-group.date input {
+    width: 100%;
+}
+.radio {
+    width: 15px;
+    height: 15px;
+}
+span.hint {
+    font-size: 11px;
+    height: auto;
+    margin-top: -5px;
+}
+@media screen and (max-width: 768px) {
+    .form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .form {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+/*end form*/
 
 /* features */
 .features h2 {

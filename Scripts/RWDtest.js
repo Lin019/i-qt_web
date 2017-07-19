@@ -22,6 +22,11 @@
         $("#menu .menu").toggleClass("is-active");
     });
 
+    $(".form .input-group.date").datepicker({
+        autoclose: true,
+        toggleActive: true
+    });
+
     $(document).scroll(function () {
         var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
         var opacityFlag = false;
