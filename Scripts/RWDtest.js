@@ -9,9 +9,9 @@
         }, 1000);
         return false;
     });
-    $("#menu a").click(function () {
+    $("#menu li").click(function () {
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
+            scrollTop: $($(this).children('a').attr('href')).offset().top
         }, 1000);
         $("#hamburger").click();
         return false;
