@@ -19,6 +19,8 @@
 
     $("#menu .menu").css({ 'top': ($(".toolbar").outerHeight()+'px') });
 
+    $(".header").css({ 'top': ($(".toolbar").outerHeight() + 'px') });
+
     $("#hamburger").click(function () {
         $(this).toggleClass("is-active");
         $("#menu .menu").toggleClass("is-active");

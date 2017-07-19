@@ -1,5 +1,4 @@
-﻿html, body {margin:0;padding:0;height:100%; box-sizing: border-box}
-
+﻿/* global change */
 body {
     font-size: 16px;
     font-weight: 300;
@@ -18,7 +17,6 @@ h1,h2 {
     font-weight: 100;
     color: #555;
     line-height: 50px;
-    text-transform: uppercase;
 }
 
 h3 {
@@ -26,19 +24,10 @@ h3 {
     font-weight: 300;
     color: #555;
     line-height: 30px;
-    text-transform: uppercase;
-}
-
-.container-fluid {
-    height: 100%;
-    display: flexbox;
 }
 
 .row-fluid {
     min-height: 60px;
-    width: auto;
-    overflow: hidden;
-    display: block;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -50,7 +39,6 @@ h3 {
 }
 
 .devider {
-    display:block;
     min-height: 30px;
 }
 
@@ -72,8 +60,7 @@ ul {
     margin-right: auto;
     width: 100px;
     height: auto;
-    padding: 10px;
-    
+    padding: 10px;  
 }
 .toolbar{
     background-color: rgba(40,40,40,1);
@@ -95,58 +82,13 @@ ul {
 #header-nav ul li a{
     font-size: large;
 }
-/* end toolbar */
 
-@media screen and (max-width: 480px) {
-   
-
-    li.home > a {
-        font-size: 0;
-    }
-    li.home > a:after {
-        content: 'H';
-        font-size: initial;
-    }
-
-    li.one > a {
-        font-size: 0;
-    }
-    li.one > a:after {
-        content: '1';
-        font-size: initial;
-    }
-
-    li.two > a {
-        font-size: 0;
-    }
-    li.two > a:after {
-        content: '2';
-        font-size: initial;
-    }
-
-    li.three > a {
-        font-size: 0;
-    }
-    li.three > a:after {
-        content: '3';
-        font-size: initial;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    li.hide-small {
-        display: none;
-    }
-}
-
-/* content */
+/* header */
 .header {
-    padding-top: 60px;
-    clear: both;
-    position: relative;
+    /* padding-top must set at jQuery [=toolbar.outerHeight()]*/
     height: 100vh;
-    flex:1;
 }
+
 .header:after {
     content: "";
     background: url('/Images/bg_test.jpg');
@@ -160,9 +102,10 @@ ul {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: 0; 
+    z-index: -2; 
 }
 
+/* content */
 li.col img {
     width: 100px;
     text-align: center;
@@ -171,13 +114,8 @@ li.col p {
     color: #000;
     font-weight: 400;
 }
-img.center {
-    display: block;
-    margin: 0 auto;
-}
-/* end content*/
 
-/* form*/
+/* form */
 #form-bg {
     position:absolute;
     height: 600px;
@@ -224,17 +162,14 @@ img.center {
 }
 
 .form-group {
-    overflow: hidden;
     margin: auto;
-    margin-bottom: 10px;
 }
 div.form-group *{
-    display: inline-block;
     float:left;
     margin-right: 10px;
 }
 .form-group label{
-    height:initial;
+    height: initial;
     float: left;
     color: #333;
     font-weight: 400;
@@ -268,7 +203,6 @@ span.hint {
         margin-left: 20px;
         margin-right: 20px;
     }
-
 }
 @media screen and (max-width: 480px) {
     .form {
@@ -321,7 +255,6 @@ span.hint {
         column-gap: 8px;
     }
 }
-/*end form*/
 
 /* features */
 .features h2 {
@@ -335,7 +268,6 @@ span.hint {
 .features div.col {
     margin-bottom: 30px;
 }
-/* end features */
 
 /* footer */
 .footer {
@@ -390,7 +322,7 @@ div.contact ul li img{
     }
 }
 
-
+/* hamburger menu */
 #menu .menu {
     width: auto;
     height: auto;
@@ -417,7 +349,6 @@ ul.menu li:hover {
 ul.menu li a {
     text-decoration: none;
 }
-/**/
 
 .navbar-toggle {
     border: none;
