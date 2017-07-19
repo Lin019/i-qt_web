@@ -50,7 +50,7 @@
             </ul>
         </div>
         <!-- header -->   
-        <div id="header" class="content row-fluid">
+        <div id="header" class="header row-fluid">
             <div class="container">
             </div>
         </div><!-- header -->
@@ -60,32 +60,48 @@
             <div id="form" class="form row-fluid ">
                 <div class="container"> 
                     <div class="row form-group form-group1">
-                        <label for="select">選擇：</label>
-                        <select class="select form-control">
-                            <option value="1">test1</option>
-                            <option value="2">test2</option>
-                            <option value="3">test3</option>
-                        </select>
-                        
+                        <ul>
+                            <li>
+                            <label for="select">選擇：</label>
+                            <select class="select form-control">
+                                <option value="1">test1</option>
+                                <option value="2">test2</option>
+                                <option value="3">test3</option>
+                            </select>
+                            </li>
+                        </ul>
                     </div>
                     <div class="row form-group form-group2">
-                        <input name="radio1" type="radio" class="radio form-control" >
-                        <label for="radio1">Return</label>
-                        <input name="radio2" type="radio" class="radio form-control">
-                        <label for="radio2">One way</label>
+                        <ul>
+                            <li>
+                                <input name="radio1" type="radio" class="radio form-control" >
+                                <label for="radio1">Return</label>
+                                <input name="radio2" type="radio" class="radio form-control">
+                                <label for="radio2">One way</label>
+                            </li>
+                        </ul>
                     </div>
                     <div class="row form-group form-group3">
-                        <input type="text" name="text1" class="form-control" placeholder="From">
-                        <input type="text" name="text2" class="form-control" placeholder="To">
-                        <label for="date1">Departure Date</label>
-                        <div class="input-group date">       
-                            <input name="date1" type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                        </div>
-
-                        <label for="date2">Return Date</label>
-                        <div class="input-group date">
-                            <input name="date2" type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                        </div>
+                        <ul>
+                            <li>
+                                <input type="text" name="text1" class="form-control" placeholder="From">
+                            </li>
+                            <li>
+                                <input type="text" name="text2" class="form-control" placeholder="To">
+                            </li>
+                            <li>
+                                <label for="date1">Departure Date</label>
+                                <div class="input-group date">       
+                                    <input name="date1" type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="date2">Return Date</label>
+                                <div class="input-group date">
+                                    <input name="date2" type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="row form-group form-group4">
                         <ul>
