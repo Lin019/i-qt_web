@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新增同義詞</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/synonym-ui.js"></script>
+    <link href="Content/logbox.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid logbox">
+        <div class="row-fluid logbox-header navbar-default navbar-fixed-top ">
+            同義詞管理
+        </div>
+        <div class="row-fluid logbox-toolbar">
+            <div class="span4 pull-left">
+                <a class="btn" id="create">新增</a>
+            </div>
+            <div class="span8 pull-right">
+                <form class="form">
+                    <input class="input-large" id="searchQuery" />                        <input type="button" class="btn" value="搜尋" />
+                </form>
+            </div>
+        </div>
+        <div class="row-fluid logbox-menu">
+            <ul class="menu">
+                <li><span class="menu-content"></span></li>
+                <li><span class="menu-content"></span></li>
+                <li><span class="menu-content"></span></li>
+                <li><span class="menu-content"></span></li>
+            </ul>
+        </div>
+        <div class="row-fluid logbox-body">
+            <table id="table-show" class="table table-bordered table-condensed table-align-right">
+                <tr>
+                    <th></th>
+                    <th>
+                        Word
+                    </th>
+                    <th>
+                        Synonyms
+                    </th>
+                    <th>
+                        LastModificationTime
+                    </th>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="uI-f2Sioag89ltQfMZSZtjHKJ5lNeyANSLLwt8w7K7Ee4pa0GHRh3G5wV8eYTAOhcX-J064JqzY3pT3X85vm9cW_z1VghSVMiTjh7xqabOY1" /><input id="SynonymID" name="SynonymID" type="hidden" value="2011" /><input id="Word" name="Word" type="hidden" value="喔;是喔" /><input id="Synonyms" name="Synonyms" type="hidden" value="好棒棒2" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="2" /><input id="UserID" name="UserID" type="hidden" value="2" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="yrEmdzp3Rdup82SMn6eZds0nBqP2oWpMOaeUXAQGIls6hFTG7Wt1OoNJnI5FL896NivK5aIOuykWd-hO_2GVG3m0tyoBpx7sczSCGttZiYw1" /><input id="SynonymID" name="SynonymID" type="hidden" value="2011" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="2" /><input id="UserID" name="UserID" type="hidden" value="2" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2" >
+                        <span class="text-word">喔;是喔</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="喔;是喔" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">好棒棒2</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="好棒棒2" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/7/8 上午 10:59:46
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="9EdtN0GgsrK0l8PpdMsuTxD8MYH5F6KOUs2bF_7nb0rPxvL9yv47QrMHKqr2Tl1YzeUDzei4NDs4SCF4rPX8_strQhcWzBoGwq2wmKWYhO41" /><input id="SynonymID" name="SynonymID" type="hidden" value="1004" /><input id="Word" name="Word" type="hidden" value="銀行卡" /><input id="Synonyms" name="Synonyms" type="hidden" value="金融卡;提款卡;玉山銀行金融卡" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="j-a-LvLaNmHnizScGXBHNuwMs8A7TvSDs79FBrTSMrpz2yy9D-17ktulWQNmlzSSwOho05B0G08qC5guQA0SQKojf0xNQo3IrKCy8SrUx141" /><input id="SynonymID" name="SynonymID" type="hidden" value="1004" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">銀行卡</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="銀行卡" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">金融卡;提款卡;玉山銀行金融卡</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="金融卡;提款卡;玉山銀行金融卡" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/24 下午 05:33:15
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="VUvTTt4uj6PBT8Y_cQ-ZmQQUsOLvUFW60B5fn4sEnhNyYLf7hZuA1bkus6ekZyHB9zT_ZlUvrBODjAoV8uDsIDUDjyAwTuNAjzbQ0GIU-mA1" /><input id="SynonymID" name="SynonymID" type="hidden" value="4" /><input id="Word" name="Word" type="hidden" value="一" /><input id="Synonyms" name="Synonyms" type="hidden" value="壹" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="AzaaZI01VoEmmsxae0IVTr-6C3KVaXHhjcnCz8KmlJB1KdWhGszvHOSXX6KmBHaC9KOI2jgwkcGLRptcZLw3-aus0-s6oKpSCf0cIltAiDs1" /><input id="SynonymID" name="SynonymID" type="hidden" value="4" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">一</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="一" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">壹</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="壹" />
+                    </td>
+                    <td data-th ="LastModTime" class="span4">
+                        2017/5/19 上午 09:55:11
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="VE52UR6EwCofgJ0LSju3REIrxEkleSOH30ay7oHZfY4aCKSQqUdnxQ7jsMvFe4221xVgu43y70hn5P1CUvFl49TyF3ElPzELvJHvOUsSMV41" /><input id="SynonymID" name="SynonymID" type="hidden" value="1003" /><input id="Word" name="Word" type="hidden" value="開心" /><input id="Synonyms" name="Synonyms" type="hidden" value="高興" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="oCWjMyzEXvCazKX8R07JuBw4kP34HZXb77gIn3mIMR02YAyifEw0uTdStlvwEHTsa5DKKAnfe2RcGSequrXlJDQ8AUeZpH4mbI86M2ShgjU1" /><input id="SynonymID" name="SynonymID" type="hidden" value="1003" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">開心</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="開心" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">高興</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="高興" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:25:11
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="7TN_wRvs0DfUFuSshbOaKdxme4u78S3kdkKMCfG29UE19utrpCcB1sCFlOmLpraypBVe3efv2LjMU2TkhZWWIDNJt42LHJkqzSe1jaMTfDY1" /><input id="SynonymID" name="SynonymID" type="hidden" value="2" /><input id="Word" name="Word" type="hidden" value="燦坤" /><input id="Synonyms" name="Synonyms" type="hidden" value="燦坤3C" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="L2s8MLSuKRYQvCnQmBCFX_Ewj5ET8fCDTjjjQcs8neBNsMga08Tva7Iigwv69T9gxmoHITbu5lIVc60lTEQebYuxeII3gHXQjO_5-HFtpR81" /><input id="SynonymID" name="SynonymID" type="hidden" value="2" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">燦坤</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="燦坤" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">燦坤3C</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="燦坤3C" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:24:06
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="atswns0oLDK0W02XBpppuMa5Klk8jHDCiZHXvB9o5YsHuRgsxKtLPKBGhc_VFZYZoHLuIdr1aUtLzKiWGS7QJMbp0_D-p76HPyugb8Polho1" /><input id="SynonymID" name="SynonymID" type="hidden" value="5" /><input id="Word" name="Word" type="hidden" value="里程" /><input id="Synonyms" name="Synonyms" type="hidden" value="哩程" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="LQkkKqOy5u54tKJ0_MMsatkMsPr3ly91WE90WMy3jEovC1C0GqXP7OnPEdxGDqbeZb1oIIvfMw2vaREUPg-djax_xOqELh_C-ZcCf7CjO2Y1" /><input id="SynonymID" name="SynonymID" type="hidden" value="5" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">里程</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="里程" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">哩程</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="哩程" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:22:15
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="z0QXx2kQH618hVl18-kXPHJr_H6w-kSGAxOcC9_a1L0hN-xVBscDecL39wb3SQsES7olgYVjYT6sqeNlbig2lXCGJ3Ypc3FvVfNVNAfk13g1" /><input id="SynonymID" name="SynonymID" type="hidden" value="1" /><input id="Word" name="Word" type="hidden" value="龍騰" /><input id="Synonyms" name="Synonyms" type="hidden" value="龍騰卡" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="hu5eqU7hyogblzgjk7EvM6wqM7UHDE8soZQavkM6hlbsf7l10aDB8xZ4Yrp1R_8TWJphY9biSWK5OQweqACbbwj54YX_MUozt5cR1E66vGE1" /><input id="SynonymID" name="SynonymID" type="hidden" value="1" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">龍騰</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="龍騰" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">龍騰卡</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="龍騰卡" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:21:49
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="VElIctkMl4WqZbN1aLNMZtyh00LQoUa-WJJbFMrZML__mvxAozQUePLG3rwVr28bCEqxJ4-pEhht1cuUGHIHYhGawt6SMKwi2nKgKg1ypn81" /><input id="SynonymID" name="SynonymID" type="hidden" value="1006" /><input id="Word" name="Word" type="hidden" value="龍騰" /><input id="Synonyms" name="Synonyms" type="hidden" value="龍騰卡" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="2" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="uIPHZfqdWiMdZysUh8Unc15vbjBVPKnlRviLblOCsrKkw75sNpcgL-Z01QNC90xz5VVrt04510VQk6lU6PQbBKreBjQ3WyTGEQkHXrpMAmg1" /><input id="SynonymID" name="SynonymID" type="hidden" value="1006" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="2" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">龍騰</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="龍騰" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">龍騰卡</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="龍騰卡" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:21:49
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="LXrVtiHqOc6Pz9isWXdJp2_WiAR6nLYWKHJ3fkymYuJl1XyRlyN7dr1Mn1pulOGXReWqr_eAxEikibXfQRKGCJ-I9etacfPY_VtcZpdV5XQ1" /><input id="SynonymID" name="SynonymID" type="hidden" value="1012" /><input id="Word" name="Word" type="hidden" value="龍騰卡" /><input id="Synonyms" name="Synonyms" type="hidden" value="龍騰card" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="3" /><input id="UserID" name="UserID" type="hidden" value="2" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="RP77_ix6tUsPk_UnG_aXNIyRHXCpXJMiohAcqTRCgWCH5AwL5OvD6Ql57OD668917qSoRlATFNH6VwxvAnx4K7YX4ya6nvKPesnRM6aDzik1" /><input id="SynonymID" name="SynonymID" type="hidden" value="1012" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="3" /><input id="UserID" name="UserID" type="hidden" value="2" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">龍騰卡</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="龍騰卡" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">龍騰card</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="龍騰card" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:21:49
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2" style="text-align: center; padding: 2px;">
+                        <form action="/KB_Synonym/Edit" class="form hide" id="form-edit" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="765u_JmgZw5AYUorL5J61Fr1UJAbu0LdzluT7EUQLfs9xtu2VA2Giaruzql4j_-zjkRk8FuSWzf2I5wXQS5gyGmU7e5_62OhiPCeIPhadf01" /><input id="SynonymID" name="SynonymID" type="hidden" value="3" /><input id="Word" name="Word" type="hidden" value="二" /><input id="Synonyms" name="Synonyms" type="hidden" value="兩;貳" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <form action="/KB_Synonym/Delete" class="form hide" id="form-delete" method="post" style="margin:0;">
+                            <input name="__RequestVerificationToken" type="hidden" value="M_UdFEKMEJIm_OfRf6lsds8jHiytMO-4nrKcANmDMG9QXC1OuLDR9-FrZJdY4-PpQyhxStBgkp53V9qt0tmSYJATsPa-Bm8rs_RY3iNjZcc1" /><input id="SynonymID" name="SynonymID" type="hidden" value="3" /><input id="AuthorityID" name="AuthorityID" type="hidden" value="0" /><input id="UserID" name="UserID" type="hidden" value="0" />                                    <div>
+                                <button id="cancel" type="reset" class="btn btn-mini">取消</button>
+                                <button id="confirm" type="submit" class="btn btn-mini">確定</button>
+                            </div>
+                        </form>                                <div id="btn-group-actions">
+                            <button id="edit" type="button" class="btn btn-mini">編輯</button>
+                            <button id="delete" type="button" class="btn btn-mini">刪除</button>
+                        </div>
+                    </td>
+                    <td data-th="Word" class="span2">
+                        <span class="text-word">二</span>
+                        <input class="hide input-word" id="item_Word" name="item.Word" type="text" value="二" />
+                    </td>
+                    <td data-th="Synonyms" class="span4">
+                        <span class="text-synonym">兩;貳</span>
+                        <input class="hide input-synonym" id="item_Synonyms" name="item.Synonyms" type="text" value="兩;貳" />
+                    </td>
+                    <td data-th="LastModTime" class="span4">
+                        2017/5/18 下午 03:21:09
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="row-fluid logbox-footer">
+            <div class="pagination-centered pagination  navbar navbar-default navbar-fixed-bottom">
+                <ul>
+                    <li class="disabled PagedList-skipToPrevious"><a>«</a></li>
+                    <li class="active"><a>1</a></li>
+                    <li class="disabled PagedList-skipToNext"><a>»</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

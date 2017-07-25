@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model WebApplication2.Models.Ticket
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewPage</title>
+
+    @Html.Partial("_Link")
+
+    <script src="/Scripts/newPage.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        @Html.Partial("_Toolbar")
+
+        <div class="header row-fluid" >
+            <div class="bg"></div>
+        </div>
+
+        <div class="container">
+            <div id="form" class="form row-fluid">
+                <form id="customer-data" class="container">
+                    <div class="row form-group form-group1">
+                        <ul>
+                            <li>
+                                <label for="select">選擇：</label><br>
+                                <h4>@Html.DisplayFor(model => model.TicketId)</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row form-group form-group2">
+                        <ul>
+                            <li>
+                                <input name="radio" type="radio" class="radio" value="return" checked>
+                                <label for="radio1">Return</label>
+                                <input id="radio2" name="radio" type="radio" class="radio" value="one-way">
+                                <label for="radio2">One way</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row form-group form-group3">
+                        <ul>
+                            <li>
+                                <h4>@Html.DisplayFor(model => model.From)</h4>
+                            </li>
+                            <li>
+                                <h4>@Html.DisplayFor(model => model.To)</h4>
+                            </li>
+                        </ul>
+                        <ul class="date">
+                            <li>
+                                <label for="date1">Departure Date</label>
+                                <div class="input-group date">
+                                    <h4>@Html.DisplayFor(model => model.strDeparture)</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="date2">Return Date</label>
+                                <div class="input-group date">
+                                    <h4>@Html.DisplayFor(model => model.strReturn)</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row form-group form-group4">
+                        <ul>
+                            <li>
+                                <label for="select">Adult</label><br>
+                                <h4>@Html.DisplayFor(model => model.Adult)</h4><br>
+                            </li>
+                            <li>
+                                <label for="select">Child</label><br>
+                                <h4>@Html.DisplayFor(model => model.Child)</h4><br>
+                            </li>
+                            <li>
+                                <label for="select">Infant</label><br>
+                                <h4>@Html.DisplayFor(model => model.Infant)</h4><br>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

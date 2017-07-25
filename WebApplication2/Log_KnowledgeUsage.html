@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/logbox.css" rel="stylesheet">
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap-datepicker.js"></script>
+    <script src="Scripts/knowledge-usage-ui.js"></script>
+    <link href="Content/logbox.css" rel="stylesheet">
+    <title>知識使用率</title>
+</head>
+<body>
+    <div class="container-fluid logbox">
+        <div class="row-fluid logbox-header">
+            機器人報表
+        </div>
+        <div class="row-fluid logbox-toolbar">
+            <div class="span3 pull-left">
+                <a class="btn" href="/Log_KnowledgeUsage/Export?FromDate=2017%2F06%2F13&amp;ToDate=2017%2F07%2F13&amp;StartPageNumber=0&amp;ItemsPerPage=32&amp;FileName=%E5%8C%AF%E5%87%BA%E5%A0%B1%E8%A1%A8.csv">匯出報表</a>
+            </div>
+            <div class="span5">
+                <form action="/Log_KnowledgeUsage" class="form form-inline" method="post">
+                    <div class="input-daterange" id="datepicker">
+                        <div class="input-append span4">
+                            <input class="span10" id="FromDate" name="FromDate" type="text" value="2017/06/13" />
+                            <span class="add-on"><i class="icon-calendar"></i></span>
+                        </div>
+                        <span class="span1" style="padding:7px;"><i class="icon-arrow-right"></i></span>
+                        <div class="input-append span4">
+                            <input class="span10" id="ToDate" name="ToDate" type="text" value="2017/07/13" />
+                            <span class="add-on"><i class="icon-calendar"></i></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block span2">送出</button>
+                </form>
+            </div>
+            <div class="span4 pull-right">
+                <ul class="nav nav-tabs pull-right">
+                    <li><a href="/Log_UserStatistics">使用者統計</a></li>
+                    <li><a href="/Log_Satisfaction">回饋統計</a></li>
+                    <li class="active"><a href="#">知識使用率</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-fluid logbox-body">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <th>最後查詢時間</th>
+                    <th>標題</th>
+                    <th>路徑</th>
+                    <th>查詢次數</th>
+                    <th>百分比</th>
+                    <th>排名</th>
+                </tr>
+
+                <tr>
+                    <td>2017/7/7 上午 11:29:30</td>
+                    <td>優惠活動</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;H發單準則&gt;&gt;H10本行特店消費問題反應&gt;&gt;商店服務及推廣訊息單(商店欲配合優惠活動)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:30</td>
+                    <td>優惠活動</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;H發單準則&gt;&gt;H10本行特店消費問題反應&gt;&gt;商店服務及推廣訊息單(商店欲配合優惠活動)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:30</td>
+                    <td>優惠活動</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;H發單準則&gt;&gt;H10本行特店消費問題反應&gt;&gt;商店服務及推廣訊息單(商店欲配合優惠活動)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:30</td>
+                    <td>優惠活動</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;H發單準則&gt;&gt;H10本行特店消費問題反應&gt;&gt;商店服務及推廣訊息單(商店欲配合優惠活動)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2017/7/5 下午 05:09:40</td>
+                    <td>信用卡 簡訊</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;中信卡 x Pi行動錢包APP</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2017/7/5 下午 05:09:40</td>
+                    <td>信用卡 簡訊</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;中信卡 x Pi行動錢包APP</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>2017/7/5 下午 05:09:40</td>
+                    <td>信用卡 簡訊</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;B附加服務&gt;&gt;愛金電子票證(信用卡附加服務)&gt;&gt;●愛金電子票證 作業流程：</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)</td>
+                    <td>4</td>
+                    <td>1.66666666666667%</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)&gt;&gt;●106年電影優惠活動 活動內容：</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:39</td>
+                    <td>電影</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I07 一般消費活動&gt;&gt;106年電影優惠活動(電影咖報報優惠)</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>2017/7/6 下午 04:35:30</td>
+                    <td>優惠</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;A產品規格&gt;&gt;中信紅利卡&gt;&gt;中信紅利卡</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:57</td>
+                    <td>贈品</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;106年ANA極緻卡上市新戶/新卡活動《哩程》【限申辦ANA新戶/新卡免登錄】&gt;&gt;106年ANA極緻卡上市新戶/新卡活動《哩程》【限申辦ANA新戶/新卡免登錄】&gt;&gt;● 106年ANA極緻卡上市新戶/新卡活動《哩程》 活動內容:</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>2017/7/6 下午 04:35:30</td>
+                    <td>優惠</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I03 聯名卡專屬優惠&gt;&gt;一卡通優惠活動彙整</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 下午 12:20:49</td>
+                    <td>888</td>
+                    <td>TEST&gt;&gt;CopyTest&gt;&gt;知識複製-新卡友</td>
+                    <td>6</td>
+                    <td>2.5%</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 下午 12:20:49</td>
+                    <td>888</td>
+                    <td>TEST&gt;&gt;CopyTest&gt;&gt;知識複製-新卡友</td>
+                    <td>6</td>
+                    <td>2.5%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 下午 12:20:49</td>
+                    <td>888</td>
+                    <td>TEST&gt;&gt;TEST&gt;&gt;test2</td>
+                    <td>6</td>
+                    <td>2.5%</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 下午 12:20:49</td>
+                    <td>888</td>
+                    <td>TEST&gt;&gt;TEST&gt;&gt;活存</td>
+                    <td>6</td>
+                    <td>2.5%</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 下午 12:20:49</td>
+                    <td>888</td>
+                    <td>TEST&gt;&gt;TEST&gt;&gt;活存</td>
+                    <td>6</td>
+                    <td>2.5%</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>2017/7/5 下午 05:09:40</td>
+                    <td>信用卡 簡訊</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;● &#160;&#160;&#160;&#160;活動內容：&gt;&gt;(一)新戶滿額禮</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:57</td>
+                    <td>贈品</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;各信用卡活動內容&gt;&gt;(二)舊戶新卡滿額禮</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 下午 12:20:01</td>
+                    <td>燦坤活動日期是什麼時候呢呢呢呢呢呢呢</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;新卡滿額禮消費門檻&gt;&gt;</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:57</td>
+                    <td>贈品</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;新卡滿額禮消費門檻&gt;&gt;</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:57</td>
+                    <td>贈品</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;新卡滿額禮消費門檻&gt;&gt;</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:57</td>
+                    <td>贈品</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;新卡滿額禮消費門檻&gt;&gt;</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>2017/7/7 上午 11:29:57</td>
+                    <td>贈品</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】&gt;&gt;新卡滿額禮消費門檻&gt;&gt;●&#160;&#160;&#160; 105年Q2新卡活動判斷邏輯大補帖</td>
+                    <td>1</td>
+                    <td>0.416666666666667%</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>2017/7/5 下午 05:09:40</td>
+                    <td>信用卡 簡訊</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;I活動查詢&gt;&gt;I13 卡片推廣活動&gt;&gt;105年Q2(4-6月)新戶/新卡活動【新戶/新卡卡友須登錄】</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>2017/7/6 下午 04:35:30</td>
+                    <td>優惠</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;B附加服務&gt;&gt;B03 旅遊服務&gt;&gt;國際機場停車服務(NEW)&gt;&gt;●流程作法：&gt;&gt;1.中國信託機場停車&amp;國際機場巴士接送服務系統：</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>2017/7/6 下午 04:35:30</td>
+                    <td>優惠</td>
+                    <td>信金&gt;&gt;信用卡業務&gt;&gt;B附加服務&gt;&gt;B03 旅遊服務&gt;&gt;國際機場停車服務(NEW)&gt;&gt;●Q＆A：&gt;&gt;【預約及結帳之Q&amp;A】</td>
+                    <td>2</td>
+                    <td>0.833333333333333%</td>
+                    <td>32</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row-fluid logbox-footer">
+            <div class="pagination pagination-centered">
+                <ul>
+                    <li class="active">
+                        <a href="/Log_KnowledgeUsage?FromDate=2017%2F06%2F13&amp;ToDate=2017%2F07%2F13&amp;StartPageNumber=0&amp;ItemsPerPage=32">1</a>
+                    </li>
+                    <li class="">
+                        <a href="/Log_KnowledgeUsage?FromDate=2017%2F06%2F13&amp;ToDate=2017%2F07%2F13&amp;StartPageNumber=1&amp;ItemsPerPage=32">2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.input-daterange#datepicker').datepicker({
+            format: "yyyy/mm/dd",
+            maxViewMode: 2,
+            todayBtn: "linked",
+            language: "zh-TW",
+            orientation: "bottom auto",
+            autoclose: true,
+            todayHighlight: true
+        });
+    </script>
+</body>
+</html>
