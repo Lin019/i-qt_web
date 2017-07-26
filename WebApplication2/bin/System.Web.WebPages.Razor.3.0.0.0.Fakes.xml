@@ -1,0 +1,1697 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.WebPages.Razor.3.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection">
+            <summary>System.Web.WebPages.Razor.Configuration.HostSection 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.#ctor(System.Web.WebPages.Razor.Configuration.HostSection)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.Constructor">
+            <summary>設定 HostSection.HostSection() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.FactoryTypeGet">
+            <summary>設定 HostSection.get_FactoryType() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.FactoryTypeSetString">
+            <summary>設定 HostSection.set_FactoryType(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.StaticConstructor">
+            <summary>設定 HostSection.HostSection() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.AllInstances.FactoryTypeGet">
+            <summary>設定 HostSection.get_FactoryType() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimHostSection.AllInstances.FactoryTypeSetString">
+            <summary>設定 HostSection.set_FactoryType(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection">
+            <summary>System.Web.WebPages.Razor.Configuration.RazorPagesSection 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.#ctor(System.Web.WebPages.Razor.Configuration.RazorPagesSection)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.Constructor">
+            <summary>設定 RazorPagesSection.RazorPagesSection() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.NamespacesGet">
+            <summary>設定 RazorPagesSection.get_Namespaces() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.NamespacesSetNamespaceCollection">
+            <summary>設定 RazorPagesSection.set_Namespaces(NamespaceCollection value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.PageBaseTypeGet">
+            <summary>設定 RazorPagesSection.get_PageBaseType() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.PageBaseTypeSetString">
+            <summary>設定 RazorPagesSection.set_PageBaseType(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.StaticConstructor">
+            <summary>設定 RazorPagesSection.RazorPagesSection() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.AllInstances.NamespacesGet">
+            <summary>設定 RazorPagesSection.get_Namespaces() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.AllInstances.NamespacesSetNamespaceCollection">
+            <summary>設定 RazorPagesSection.set_Namespaces(NamespaceCollection value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.AllInstances.PageBaseTypeGet">
+            <summary>設定 RazorPagesSection.get_PageBaseType() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorPagesSection.AllInstances.PageBaseTypeSetString">
+            <summary>設定 RazorPagesSection.set_PageBaseType(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup">
+            <summary>System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.#ctor(System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.Constructor">
+            <summary>設定 RazorWebSectionGroup.RazorWebSectionGroup() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.HostGet">
+            <summary>設定 RazorWebSectionGroup.get_Host() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.HostSetHostSection">
+            <summary>設定 RazorWebSectionGroup.set_Host(HostSection value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.PagesGet">
+            <summary>設定 RazorWebSectionGroup.get_Pages() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.PagesSetRazorPagesSection">
+            <summary>設定 RazorWebSectionGroup.set_Pages(RazorPagesSection value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.StaticConstructor">
+            <summary>設定 RazorWebSectionGroup.RazorWebSectionGroup() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.AllInstances.HostGet">
+            <summary>設定 RazorWebSectionGroup.get_Host() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.AllInstances.HostSetHostSection">
+            <summary>設定 RazorWebSectionGroup.set_Host(HostSection value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.AllInstances.PagesGet">
+            <summary>設定 RazorWebSectionGroup.get_Pages() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.ShimRazorWebSectionGroup.AllInstances.PagesSetRazorPagesSection">
+            <summary>設定 RazorWebSectionGroup.set_Pages(RazorPagesSection value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection">
+            <summary>System.Web.WebPages.Razor.Configuration.HostSection 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.DeserializeElement(System.Xml.XmlReader,System.Boolean)">
+            <summary>設定 ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.DeserializeElementXmlReaderBoolean">
+            <summary>設定 ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.DeserializeSection(System.Xml.XmlReader)">
+            <summary>設定 ConfigurationSection.DeserializeSection(XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.DeserializeSectionXmlReader">
+            <summary>設定 ConfigurationSection.DeserializeSection(XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ElementPropertyGet">
+            <summary>設定 ConfigurationElement.get_ElementProperty() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.Equals(System.Object)">
+            <summary>設定 ConfigurationElement.Equals(Object compareTo) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.EqualsObject">
+            <summary>設定 ConfigurationElement.Equals(Object compareTo) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetHashCode">
+            <summary>設定 ConfigurationElement.GetHashCode() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetHashCode01">
+            <summary>設定 ConfigurationElement.GetHashCode() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetRuntimeObject">
+            <summary>設定 ConfigurationSection.GetRuntimeObject() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetRuntimeObject01">
+            <summary>設定 ConfigurationSection.GetRuntimeObject() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetTransformedAssemblyString(System.String)">
+            <summary>設定 ConfigurationElement.GetTransformedAssemblyString(String assemblyName) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetTransformedAssemblyStringString">
+            <summary>設定 ConfigurationElement.GetTransformedAssemblyString(String assemblyName) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetTransformedTypeString(System.String)">
+            <summary>設定 ConfigurationElement.GetTransformedTypeString(String typeName) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.GetTransformedTypeStringString">
+            <summary>設定 ConfigurationElement.GetTransformedTypeString(String typeName) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.Init">
+            <summary>設定 ConfigurationElement.Init() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.Init01">
+            <summary>設定 ConfigurationElement.Init() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.InitializeDefault">
+            <summary>設定 ConfigurationElement.InitializeDefault() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.InitializeDefault01">
+            <summary>設定 ConfigurationElement.InitializeDefault() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.InitializeStub">
+            <summary>初始化 type StubHostSection 的新執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.IsModified">
+            <summary>設定 ConfigurationSection.IsModified() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.IsModified01">
+            <summary>設定 ConfigurationSection.IsModified() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.IsReadOnly">
+            <summary>設定 ConfigurationElement.IsReadOnly() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.IsReadOnly01">
+            <summary>設定 ConfigurationElement.IsReadOnly() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ListErrors(System.Collections.IList)">
+            <summary>設定 ConfigurationElement.ListErrors(IList errorList) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ListErrorsIList">
+            <summary>設定 ConfigurationElement.ListErrors(IList errorList) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.OnDeserializeUnrecognizedAttribute(System.String,System.String)">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.OnDeserializeUnrecognizedAttributeStringString">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.OnDeserializeUnrecognizedElementStringXmlReader">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.OnRequiredPropertyNotFound(System.String)">
+            <summary>設定 ConfigurationElement.OnRequiredPropertyNotFound(String name) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.OnRequiredPropertyNotFoundString">
+            <summary>設定 ConfigurationElement.OnRequiredPropertyNotFound(String name) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.PostDeserialize">
+            <summary>設定 ConfigurationElement.PostDeserialize() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.PostDeserialize01">
+            <summary>設定 ConfigurationElement.PostDeserialize() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.PreSerialize(System.Xml.XmlWriter)">
+            <summary>設定 ConfigurationElement.PreSerialize(XmlWriter writer) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.PreSerializeXmlWriter">
+            <summary>設定 ConfigurationElement.PreSerialize(XmlWriter writer) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.PropertiesGet">
+            <summary>設定 ConfigurationElement.get_Properties() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.Reset(System.Configuration.ConfigurationElement)">
+            <summary>設定 ConfigurationElement.Reset(ConfigurationElement parentElement) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ResetConfigurationElement">
+            <summary>設定 ConfigurationElement.Reset(ConfigurationElement parentElement) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ResetModified">
+            <summary>設定 ConfigurationSection.ResetModified() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ResetModified01">
+            <summary>設定 ConfigurationSection.ResetModified() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SerializeElement(System.Xml.XmlWriter,System.Boolean)">
+            <summary>設定 ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SerializeElementXmlWriterBoolean">
+            <summary>設定 ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
+            <summary>設定 ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SerializeSectionConfigurationElementStringConfigurationSaveMode">
+            <summary>設定 ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SerializeToXmlElement(System.Xml.XmlWriter,System.String)">
+            <summary>設定 ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SerializeToXmlElementXmlWriterString">
+            <summary>設定 ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SetReadOnly">
+            <summary>設定 ConfigurationElement.SetReadOnly() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.SetReadOnly01">
+            <summary>設定 ConfigurationElement.SetReadOnly() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ShouldSerializeElementInTargetVersion(System.Configuration.ConfigurationElement,System.String,System.Runtime.Versioning.FrameworkName)">
+            <summary>設定 ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ShouldSerializeElementInTargetVersionConfigurationElementStringFrameworkName">
+            <summary>設定 ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ShouldSerializePropertyInTargetVersion(System.Configuration.ConfigurationProperty,System.String,System.Runtime.Versioning.FrameworkName,System.Configuration.ConfigurationElement)">
+            <summary>設定 ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ShouldSerializePropertyInTargetVersionConfigurationPropertyStringFrameworkNameConfigurationElement">
+            <summary>設定 ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ShouldSerializeSectionInTargetVersion(System.Runtime.Versioning.FrameworkName)">
+            <summary>設定 ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ShouldSerializeSectionInTargetVersionFrameworkName">
+            <summary>設定 ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)">
+            <summary>設定 ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.UnmergeConfigurationElementConfigurationElementConfigurationSaveMode">
+            <summary>設定 ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.ElementProperty">
+            <summary>設定 ConfigurationElement.get_ElementProperty() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubHostSection.Properties">
+            <summary>設定 ConfigurationElement.get_Properties() 的 stub</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection">
+            <summary>System.Web.WebPages.Razor.Configuration.RazorPagesSection 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.DeserializeElement(System.Xml.XmlReader,System.Boolean)">
+            <summary>設定 ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.DeserializeElementXmlReaderBoolean">
+            <summary>設定 ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.DeserializeSection(System.Xml.XmlReader)">
+            <summary>設定 ConfigurationSection.DeserializeSection(XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.DeserializeSectionXmlReader">
+            <summary>設定 ConfigurationSection.DeserializeSection(XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ElementPropertyGet">
+            <summary>設定 ConfigurationElement.get_ElementProperty() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.Equals(System.Object)">
+            <summary>設定 ConfigurationElement.Equals(Object compareTo) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.EqualsObject">
+            <summary>設定 ConfigurationElement.Equals(Object compareTo) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetHashCode">
+            <summary>設定 ConfigurationElement.GetHashCode() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetHashCode01">
+            <summary>設定 ConfigurationElement.GetHashCode() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetRuntimeObject">
+            <summary>設定 ConfigurationSection.GetRuntimeObject() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetRuntimeObject01">
+            <summary>設定 ConfigurationSection.GetRuntimeObject() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetTransformedAssemblyString(System.String)">
+            <summary>設定 ConfigurationElement.GetTransformedAssemblyString(String assemblyName) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetTransformedAssemblyStringString">
+            <summary>設定 ConfigurationElement.GetTransformedAssemblyString(String assemblyName) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetTransformedTypeString(System.String)">
+            <summary>設定 ConfigurationElement.GetTransformedTypeString(String typeName) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.GetTransformedTypeStringString">
+            <summary>設定 ConfigurationElement.GetTransformedTypeString(String typeName) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.Init">
+            <summary>設定 ConfigurationElement.Init() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.Init01">
+            <summary>設定 ConfigurationElement.Init() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.InitializeDefault">
+            <summary>設定 ConfigurationElement.InitializeDefault() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.InitializeDefault01">
+            <summary>設定 ConfigurationElement.InitializeDefault() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.InitializeStub">
+            <summary>初始化 type StubRazorPagesSection 的新執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.IsModified">
+            <summary>設定 ConfigurationSection.IsModified() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.IsModified01">
+            <summary>設定 ConfigurationSection.IsModified() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.IsReadOnly">
+            <summary>設定 ConfigurationElement.IsReadOnly() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.IsReadOnly01">
+            <summary>設定 ConfigurationElement.IsReadOnly() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ListErrors(System.Collections.IList)">
+            <summary>設定 ConfigurationElement.ListErrors(IList errorList) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ListErrorsIList">
+            <summary>設定 ConfigurationElement.ListErrors(IList errorList) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.OnDeserializeUnrecognizedAttribute(System.String,System.String)">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.OnDeserializeUnrecognizedAttributeStringString">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.OnDeserializeUnrecognizedElementStringXmlReader">
+            <summary>設定 ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.OnRequiredPropertyNotFound(System.String)">
+            <summary>設定 ConfigurationElement.OnRequiredPropertyNotFound(String name) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.OnRequiredPropertyNotFoundString">
+            <summary>設定 ConfigurationElement.OnRequiredPropertyNotFound(String name) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.PostDeserialize">
+            <summary>設定 ConfigurationElement.PostDeserialize() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.PostDeserialize01">
+            <summary>設定 ConfigurationElement.PostDeserialize() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.PreSerialize(System.Xml.XmlWriter)">
+            <summary>設定 ConfigurationElement.PreSerialize(XmlWriter writer) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.PreSerializeXmlWriter">
+            <summary>設定 ConfigurationElement.PreSerialize(XmlWriter writer) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.PropertiesGet">
+            <summary>設定 ConfigurationElement.get_Properties() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.Reset(System.Configuration.ConfigurationElement)">
+            <summary>設定 ConfigurationElement.Reset(ConfigurationElement parentElement) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ResetConfigurationElement">
+            <summary>設定 ConfigurationElement.Reset(ConfigurationElement parentElement) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ResetModified">
+            <summary>設定 ConfigurationSection.ResetModified() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ResetModified01">
+            <summary>設定 ConfigurationSection.ResetModified() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SerializeElement(System.Xml.XmlWriter,System.Boolean)">
+            <summary>設定 ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SerializeElementXmlWriterBoolean">
+            <summary>設定 ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
+            <summary>設定 ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SerializeSectionConfigurationElementStringConfigurationSaveMode">
+            <summary>設定 ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SerializeToXmlElement(System.Xml.XmlWriter,System.String)">
+            <summary>設定 ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SerializeToXmlElementXmlWriterString">
+            <summary>設定 ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SetReadOnly">
+            <summary>設定 ConfigurationElement.SetReadOnly() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.SetReadOnly01">
+            <summary>設定 ConfigurationElement.SetReadOnly() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ShouldSerializeElementInTargetVersion(System.Configuration.ConfigurationElement,System.String,System.Runtime.Versioning.FrameworkName)">
+            <summary>設定 ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ShouldSerializeElementInTargetVersionConfigurationElementStringFrameworkName">
+            <summary>設定 ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ShouldSerializePropertyInTargetVersion(System.Configuration.ConfigurationProperty,System.String,System.Runtime.Versioning.FrameworkName,System.Configuration.ConfigurationElement)">
+            <summary>設定 ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ShouldSerializePropertyInTargetVersionConfigurationPropertyStringFrameworkNameConfigurationElement">
+            <summary>設定 ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ShouldSerializeSectionInTargetVersion(System.Runtime.Versioning.FrameworkName)">
+            <summary>設定 ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ShouldSerializeSectionInTargetVersionFrameworkName">
+            <summary>設定 ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)">
+            <summary>設定 ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.UnmergeConfigurationElementConfigurationElementConfigurationSaveMode">
+            <summary>設定 ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.ElementProperty">
+            <summary>設定 ConfigurationElement.get_ElementProperty() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorPagesSection.Properties">
+            <summary>設定 ConfigurationElement.get_Properties() 的 stub</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup">
+            <summary>System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.InitializeStub">
+            <summary>初始化 type StubRazorWebSectionGroup 的新執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.ShouldSerializeSectionGroupInTargetVersion(System.Runtime.Versioning.FrameworkName)">
+            <summary>設定 ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.ShouldSerializeSectionGroupInTargetVersionFrameworkName">
+            <summary>設定 ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(FrameworkName targetFramework) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Configuration.Fakes.StubRazorWebSectionGroup.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs">
+            <summary>System.Web.WebPages.Razor.CompilingPathEventArgs 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.#ctor(System.Web.WebPages.Razor.CompilingPathEventArgs)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.ConstructorStringWebPageRazorHost">
+            <summary>設定 CompilingPathEventArgs.CompilingPathEventArgs(String virtualPath, WebPageRazorHost host) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.HostGet">
+            <summary>設定 CompilingPathEventArgs.get_Host() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.HostSetWebPageRazorHost">
+            <summary>設定 CompilingPathEventArgs.set_Host(WebPageRazorHost value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.VirtualPathGet">
+            <summary>設定 CompilingPathEventArgs.get_VirtualPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.VirtualPathSetString">
+            <summary>設定 CompilingPathEventArgs.set_VirtualPath(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.AllInstances.HostGet">
+            <summary>設定 CompilingPathEventArgs.get_Host() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.AllInstances.HostSetWebPageRazorHost">
+            <summary>設定 CompilingPathEventArgs.set_Host(WebPageRazorHost value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.AllInstances.VirtualPathGet">
+            <summary>設定 CompilingPathEventArgs.get_VirtualPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimCompilingPathEventArgs.AllInstances.VirtualPathSetString">
+            <summary>設定 CompilingPathEventArgs.set_VirtualPath(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimPreApplicationStartCode">
+            <summary>System.Web.WebPages.Razor.PreApplicationStartCode 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimPreApplicationStartCode.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimPreApplicationStartCode.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimPreApplicationStartCode.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimPreApplicationStartCode.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimPreApplicationStartCode.Start">
+            <summary>設定 PreApplicationStartCode.Start() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider">
+            <summary>System.Web.WebPages.Razor.RazorBuildProvider 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.#ctor(System.Web.WebPages.Razor.RazorBuildProvider)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AddVirtualPathDependencyString">
+            <summary>設定 RazorBuildProvider.AddVirtualPathDependency(String dependency) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AssemblyBuilderGet">
+            <summary>設定 RazorBuildProvider.get_AssemblyBuilder() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeCompilerTypeGet">
+            <summary>設定 RazorBuildProvider.get_CodeCompilerType() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationCompletedAddEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.add_CodeGenerationCompleted(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationCompletedInternalAddEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.add_CodeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationCompletedInternalRemoveEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.remove_CodeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationCompletedRemoveEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.remove_CodeGenerationCompleted(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationStartedAddEventHandler">
+            <summary>設定 RazorBuildProvider.add_CodeGenerationStarted(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationStartedInternalAddEventHandler">
+            <summary>設定 RazorBuildProvider.add_CodeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationStartedInternalRemoveEventHandler">
+            <summary>設定 RazorBuildProvider.remove_CodeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CodeGenerationStartedRemoveEventHandler">
+            <summary>設定 RazorBuildProvider.remove_CodeGenerationStarted(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CompilingPathAddEventHandlerOfCompilingPathEventArgs">
+            <summary>設定 RazorBuildProvider.add_CompilingPath(EventHandler`1&lt;CompilingPathEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CompilingPathRemoveEventHandlerOfCompilingPathEventArgs">
+            <summary>設定 RazorBuildProvider.remove_CompilingPath(EventHandler`1&lt;CompilingPathEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.Constructor">
+            <summary>設定 RazorBuildProvider.RazorBuildProvider() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CreateExceptionFromParserErrorRazorErrorString">
+            <summary>設定 RazorBuildProvider.CreateExceptionFromParserError(RazorError error, String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.CreateHost">
+            <summary>設定 RazorBuildProvider.CreateHost() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.EnsureGeneratedCode">
+            <summary>設定 RazorBuildProvider.EnsureGeneratedCode() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.GenerateCodeAssemblyBuilder">
+            <summary>設定 RazorBuildProvider.GenerateCode(AssemblyBuilder assemblyBuilder) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.GeneratedCodeGet">
+            <summary>設定 RazorBuildProvider.get_GeneratedCode() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.GeneratedCodeSetCodeCompileUnit">
+            <summary>設定 RazorBuildProvider.set_GeneratedCode(CodeCompileUnit value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.GetGeneratedTypeCompilerResults">
+            <summary>設定 RazorBuildProvider.GetGeneratedType(CompilerResults results) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.GetHostFromConfig">
+            <summary>設定 RazorBuildProvider.GetHostFromConfig() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.HostGet">
+            <summary>設定 RazorBuildProvider.get_Host() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.HostSetWebPageRazorHost">
+            <summary>設定 RazorBuildProvider.set_Host(WebPageRazorHost value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.InternalOpenReader">
+            <summary>設定 RazorBuildProvider.InternalOpenReader() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.OnBeforeCompilePathCompilingPathEventArgs">
+            <summary>設定 RazorBuildProvider.OnBeforeCompilePath(CompilingPathEventArgs args) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.OnCodeGenerationCompletedCodeCompileUnit">
+            <summary>設定 RazorBuildProvider.OnCodeGenerationCompleted(CodeCompileUnit generatedCode) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.SetIncludeDebugInfoFlagCompilerType">
+            <summary>設定 RazorBuildProvider.SetIncludeDebugInfoFlag(CompilerType compilerType) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.VirtualPathDependenciesGet">
+            <summary>設定 RazorBuildProvider.get_VirtualPathDependencies() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.VirtualPathGet">
+            <summary>設定 RazorBuildProvider.get_VirtualPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider._codeGenerationCompletedInternalAddEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.add__codeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider._codeGenerationCompletedInternalRemoveEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.remove__codeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider._codeGenerationStartedInternalAddEventHandler">
+            <summary>設定 RazorBuildProvider.add__codeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider._codeGenerationStartedInternalRemoveEventHandler">
+            <summary>設定 RazorBuildProvider.remove__codeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.AddVirtualPathDependencyString">
+            <summary>設定 RazorBuildProvider.AddVirtualPathDependency(String dependency) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.AssemblyBuilderGet">
+            <summary>設定 RazorBuildProvider.get_AssemblyBuilder() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.CodeCompilerTypeGet">
+            <summary>設定 RazorBuildProvider.get_CodeCompilerType() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.CodeGenerationCompletedInternalAddEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.add_CodeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.CodeGenerationCompletedInternalRemoveEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.remove_CodeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.CodeGenerationStartedInternalAddEventHandler">
+            <summary>設定 RazorBuildProvider.add_CodeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.CodeGenerationStartedInternalRemoveEventHandler">
+            <summary>設定 RazorBuildProvider.remove_CodeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.CreateHost">
+            <summary>設定 RazorBuildProvider.CreateHost() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.EnsureGeneratedCode">
+            <summary>設定 RazorBuildProvider.EnsureGeneratedCode() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.GenerateCodeAssemblyBuilder">
+            <summary>設定 RazorBuildProvider.GenerateCode(AssemblyBuilder assemblyBuilder) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.GeneratedCodeGet">
+            <summary>設定 RazorBuildProvider.get_GeneratedCode() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.GeneratedCodeSetCodeCompileUnit">
+            <summary>設定 RazorBuildProvider.set_GeneratedCode(CodeCompileUnit value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.GetGeneratedTypeCompilerResults">
+            <summary>設定 RazorBuildProvider.GetGeneratedType(CompilerResults results) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.GetHostFromConfig">
+            <summary>設定 RazorBuildProvider.GetHostFromConfig() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.HostGet">
+            <summary>設定 RazorBuildProvider.get_Host() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.HostSetWebPageRazorHost">
+            <summary>設定 RazorBuildProvider.set_Host(WebPageRazorHost value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.InternalOpenReader">
+            <summary>設定 RazorBuildProvider.InternalOpenReader() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.OnBeforeCompilePathCompilingPathEventArgs">
+            <summary>設定 RazorBuildProvider.OnBeforeCompilePath(CompilingPathEventArgs args) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.OnCodeGenerationCompletedCodeCompileUnit">
+            <summary>設定 RazorBuildProvider.OnCodeGenerationCompleted(CodeCompileUnit generatedCode) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.VirtualPathDependenciesGet">
+            <summary>設定 RazorBuildProvider.get_VirtualPathDependencies() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances.VirtualPathGet">
+            <summary>設定 RazorBuildProvider.get_VirtualPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances._codeGenerationCompletedInternalAddEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.add__codeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances._codeGenerationCompletedInternalRemoveEventHandlerOfCodeGenerationCompleteEventArgs">
+            <summary>設定 RazorBuildProvider.remove__codeGenerationCompletedInternal(EventHandler`1&lt;CodeGenerationCompleteEventArgs&gt; value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances._codeGenerationStartedInternalAddEventHandler">
+            <summary>設定 RazorBuildProvider.add__codeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimRazorBuildProvider.AllInstances._codeGenerationStartedInternalRemoveEventHandler">
+            <summary>設定 RazorBuildProvider.remove__codeGenerationStartedInternal(EventHandler value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost">
+            <summary>System.Web.WebPages.Razor.WebCodeRazorHost 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.#ctor(System.Web.WebPages.Razor.WebCodeRazorHost)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.ConstructorString">
+            <summary>設定 WebCodeRazorHost.WebCodeRazorHost(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.ConstructorStringString">
+            <summary>設定 WebCodeRazorHost.WebCodeRazorHost(String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.DetermineNamespaceString">
+            <summary>設定 WebCodeRazorHost.DetermineNamespace(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.GetClassNameString">
+            <summary>設定 WebCodeRazorHost.GetClassName(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.GetDirectoryString">
+            <summary>設定 WebCodeRazorHost.GetDirectory(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.PostProcessGeneratedCodeCodeGeneratorContext">
+            <summary>設定 WebCodeRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.StaticConstructor">
+            <summary>設定 WebCodeRazorHost.WebCodeRazorHost() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost._PostProcessGeneratedCodeb__6CodeMemberProperty">
+            <summary>設定 WebCodeRazorHost.&lt;PostProcessGeneratedCode&gt;b__6(CodeMemberProperty p) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.AllInstances.GetClassNameString">
+            <summary>設定 WebCodeRazorHost.GetClassName(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebCodeRazorHost.AllInstances.PostProcessGeneratedCodeCodeGeneratorContext">
+            <summary>設定 WebCodeRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost">
+            <summary>System.Web.WebPages.Razor.WebPageRazorHost 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.#ctor(System.Web.WebPages.Razor.WebPageRazorHost)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AddGlobalImportString">
+            <summary>設定 WebPageRazorHost.AddGlobalImport(String ns) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.CheckForSpecialPage">
+            <summary>設定 WebPageRazorHost.CheckForSpecialPage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.CodeLanguageGet">
+            <summary>設定 WebPageRazorHost.get_CodeLanguage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.CodeLanguageSetRazorCodeLanguage">
+            <summary>設定 WebPageRazorHost.set_CodeLanguage(RazorCodeLanguage value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.Constructor">
+            <summary>設定 WebPageRazorHost.WebPageRazorHost() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.ConstructorString">
+            <summary>設定 WebPageRazorHost.WebPageRazorHost(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.ConstructorStringString">
+            <summary>設定 WebPageRazorHost.WebPageRazorHost(String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.CreateMarkupParser">
+            <summary>設定 WebPageRazorHost.CreateMarkupParser() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_DefaultBaseClass() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultBaseClassSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultBaseClass(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultClassNameGet">
+            <summary>設定 WebPageRazorHost.get_DefaultClassName() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultClassNameSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultClassName(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultDebugCompilationGet">
+            <summary>設定 WebPageRazorHost.get_DefaultDebugCompilation() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultDebugCompilationSetBoolean">
+            <summary>設定 WebPageRazorHost.set_DefaultDebugCompilation(Boolean value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultPageBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_DefaultPageBaseClass() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DefaultPageBaseClassSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultPageBaseClass(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.DetermineCodeLanguageString">
+            <summary>設定 WebPageRazorHost.DetermineCodeLanguage(String fileName) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.GetClassNameString">
+            <summary>設定 WebPageRazorHost.GetClassName(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.GetCodeLanguage">
+            <summary>設定 WebPageRazorHost.GetCodeLanguage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.GetGlobalImports">
+            <summary>設定 WebPageRazorHost.GetGlobalImports() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.GetLanguageByExtensionString">
+            <summary>設定 WebPageRazorHost.GetLanguageByExtension(String extension) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.GlobalAsaxTypeNameGet">
+            <summary>設定 WebPageRazorHost.get_GlobalAsaxTypeName() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.GlobalAsaxTypeNameSetString">
+            <summary>設定 WebPageRazorHost.set_GlobalAsaxTypeName(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.InstrumentedSourceFilePathGet">
+            <summary>設定 WebPageRazorHost.get_InstrumentedSourceFilePath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.InstrumentedSourceFilePathSetString">
+            <summary>設定 WebPageRazorHost.set_InstrumentedSourceFilePath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.IsSpecialPageGet">
+            <summary>設定 WebPageRazorHost.get_IsSpecialPage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.MapPhysicalPath">
+            <summary>設定 WebPageRazorHost.MapPhysicalPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.PhysicalPathGet">
+            <summary>設定 WebPageRazorHost.get_PhysicalPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.PhysicalPathSetString">
+            <summary>設定 WebPageRazorHost.set_PhysicalPath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.PostProcessGeneratedCodeCodeGeneratorContext">
+            <summary>設定 WebPageRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.RegisterSpecialFileStringString">
+            <summary>設定 WebPageRazorHost.RegisterSpecialFile(String fileName, String baseTypeName) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.RegisterSpecialFileStringType">
+            <summary>設定 WebPageRazorHost.RegisterSpecialFile(String fileName, Type baseType) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.SpecialPageBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_SpecialPageBaseClass() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.StaticConstructor">
+            <summary>設定 WebPageRazorHost.WebPageRazorHost() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.VirtualPathGet">
+            <summary>設定 WebPageRazorHost.get_VirtualPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.VirtualPathSetString">
+            <summary>設定 WebPageRazorHost.set_VirtualPath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost._GetGlobalImportsb__1KeyValuePairOfStringObject">
+            <summary>設定 WebPageRazorHost.&lt;GetGlobalImports&gt;b__1(KeyValuePair`2&lt;String,Object&gt; pair) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost._PostProcessGeneratedCodeb__4String">
+            <summary>設定 WebPageRazorHost.&lt;PostProcessGeneratedCode&gt;b__4(String s) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.CheckForSpecialPage">
+            <summary>設定 WebPageRazorHost.CheckForSpecialPage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.CodeLanguageGet">
+            <summary>設定 WebPageRazorHost.get_CodeLanguage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.CodeLanguageSetRazorCodeLanguage">
+            <summary>設定 WebPageRazorHost.set_CodeLanguage(RazorCodeLanguage value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.CreateMarkupParser">
+            <summary>設定 WebPageRazorHost.CreateMarkupParser() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_DefaultBaseClass() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultBaseClassSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultBaseClass(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultClassNameGet">
+            <summary>設定 WebPageRazorHost.get_DefaultClassName() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultClassNameSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultClassName(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultDebugCompilationGet">
+            <summary>設定 WebPageRazorHost.get_DefaultDebugCompilation() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultDebugCompilationSetBoolean">
+            <summary>設定 WebPageRazorHost.set_DefaultDebugCompilation(Boolean value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultPageBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_DefaultPageBaseClass() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.DefaultPageBaseClassSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultPageBaseClass(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.GetClassNameString">
+            <summary>設定 WebPageRazorHost.GetClassName(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.GetCodeLanguage">
+            <summary>設定 WebPageRazorHost.GetCodeLanguage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.GlobalAsaxTypeNameGet">
+            <summary>設定 WebPageRazorHost.get_GlobalAsaxTypeName() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.GlobalAsaxTypeNameSetString">
+            <summary>設定 WebPageRazorHost.set_GlobalAsaxTypeName(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.InstrumentedSourceFilePathGet">
+            <summary>設定 WebPageRazorHost.get_InstrumentedSourceFilePath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.InstrumentedSourceFilePathSetString">
+            <summary>設定 WebPageRazorHost.set_InstrumentedSourceFilePath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.IsSpecialPageGet">
+            <summary>設定 WebPageRazorHost.get_IsSpecialPage() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.MapPhysicalPath">
+            <summary>設定 WebPageRazorHost.MapPhysicalPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.PhysicalPathGet">
+            <summary>設定 WebPageRazorHost.get_PhysicalPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.PhysicalPathSetString">
+            <summary>設定 WebPageRazorHost.set_PhysicalPath(String value) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.PostProcessGeneratedCodeCodeGeneratorContext">
+            <summary>設定 WebPageRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.RegisterSpecialFileStringString">
+            <summary>設定 WebPageRazorHost.RegisterSpecialFile(String fileName, String baseTypeName) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.RegisterSpecialFileStringType">
+            <summary>設定 WebPageRazorHost.RegisterSpecialFile(String fileName, Type baseType) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.SpecialPageBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_SpecialPageBaseClass() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.VirtualPathGet">
+            <summary>設定 WebPageRazorHost.get_VirtualPath() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebPageRazorHost.AllInstances.VirtualPathSetString">
+            <summary>設定 WebPageRazorHost.set_VirtualPath(String value) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory">
+            <summary>System.Web.WebPages.Razor.WebRazorHostFactory 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.#ctor(System.Web.WebPages.Razor.WebRazorHostFactory)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.ApplyConfigurationToHostRazorPagesSectionWebPageRazorHost">
+            <summary>設定 WebRazorHostFactory.ApplyConfigurationToHost(RazorPagesSection config, WebPageRazorHost host) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.Constructor">
+            <summary>設定 WebRazorHostFactory.WebRazorHostFactory() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateDefaultHostString">
+            <summary>設定 WebRazorHostFactory.CreateDefaultHost(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateDefaultHostStringString">
+            <summary>設定 WebRazorHostFactory.CreateDefaultHost(String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateFactoryString">
+            <summary>設定 WebRazorHostFactory.CreateFactory(String typeName) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateHostFromConfigCoreRazorWebSectionGroupStringString">
+            <summary>設定 WebRazorHostFactory.CreateHostFromConfigCore(RazorWebSectionGroup config, String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateHostFromConfigRazorWebSectionGroupString">
+            <summary>設定 WebRazorHostFactory.CreateHostFromConfig(RazorWebSectionGroup config, String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateHostFromConfigRazorWebSectionGroupStringString">
+            <summary>設定 WebRazorHostFactory.CreateHostFromConfig(RazorWebSectionGroup config, String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateHostFromConfigString">
+            <summary>設定 WebRazorHostFactory.CreateHostFromConfig(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateHostFromConfigStringString">
+            <summary>設定 WebRazorHostFactory.CreateHostFromConfig(String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.CreateHostStringString">
+            <summary>設定 WebRazorHostFactory.CreateHost(String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.DefaultTypeFactoryString">
+            <summary>設定 WebRazorHostFactory.DefaultTypeFactory(String typeName) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.EnsureAppRelativeString">
+            <summary>設定 WebRazorHostFactory.EnsureAppRelative(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.GetRazorSectionString">
+            <summary>設定 WebRazorHostFactory.GetRazorSection(String virtualPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.StaticConstructor">
+            <summary>設定 WebRazorHostFactory.WebRazorHostFactory() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory._ApplyConfigurationToHostb__0NamespaceInfo">
+            <summary>設定 WebRazorHostFactory.&lt;ApplyConfigurationToHost&gt;b__0(NamespaceInfo ns) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.ShimWebRazorHostFactory.AllInstances.CreateHostStringString">
+            <summary>設定 WebRazorHostFactory.CreateHost(String virtualPath, String physicalPath) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.StubCompilingPathEventArgs">
+            <summary>System.Web.WebPages.Razor.CompilingPathEventArgs 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubCompilingPathEventArgs.#ctor(System.String,System.Web.WebPages.Razor.WebPageRazorHost)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubCompilingPathEventArgs.InitializeStub">
+            <summary>初始化 type StubCompilingPathEventArgs 的新執行個體</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubCompilingPathEventArgs.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubCompilingPathEventArgs.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubCompilingPathEventArgs.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider">
+            <summary>System.Web.WebPages.Razor.RazorBuildProvider 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.CodeCompilerTypeGet">
+            <summary>設定 RazorBuildProvider.get_CodeCompilerType() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.CreateHost">
+            <summary>設定 RazorBuildProvider.CreateHost() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.CreateHost01">
+            <summary>設定 RazorBuildProvider.CreateHost() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)">
+            <summary>設定 RazorBuildProvider.GenerateCode(AssemblyBuilder assemblyBuilder) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GenerateCodeAssemblyBuilder">
+            <summary>設定 RazorBuildProvider.GenerateCode(AssemblyBuilder assemblyBuilder) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)">
+            <summary>設定 BuildProvider.GetCodeCompileUnit(IDictionary&amp; linePragmasTable) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetCodeCompileUnitIDictionaryOut">
+            <summary>設定 BuildProvider.GetCodeCompileUnit(IDictionary&amp; linePragmasTable) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)">
+            <summary>設定 BuildProvider.GetCustomString(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetCustomStringCompilerResults">
+            <summary>設定 BuildProvider.GetCustomString(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetGeneratedType(System.CodeDom.Compiler.CompilerResults)">
+            <summary>設定 RazorBuildProvider.GetGeneratedType(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetGeneratedTypeCompilerResults">
+            <summary>設定 RazorBuildProvider.GetGeneratedType(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetHostFromConfig">
+            <summary>設定 RazorBuildProvider.GetHostFromConfig() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetHostFromConfig01">
+            <summary>設定 RazorBuildProvider.GetHostFromConfig() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)">
+            <summary>設定 BuildProvider.GetResultFlags(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.GetResultFlagsCompilerResults">
+            <summary>設定 BuildProvider.GetResultFlags(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.InitializeStub">
+            <summary>初始化 type StubRazorBuildProvider 的新執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.InternalOpenReader">
+            <summary>設定 RazorBuildProvider.InternalOpenReader() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.InternalOpenReader01">
+            <summary>設定 RazorBuildProvider.InternalOpenReader() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.OnBeforeCompilePath(System.Web.WebPages.Razor.CompilingPathEventArgs)">
+            <summary>設定 RazorBuildProvider.OnBeforeCompilePath(CompilingPathEventArgs args) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.OnBeforeCompilePathCompilingPathEventArgs">
+            <summary>設定 RazorBuildProvider.OnBeforeCompilePath(CompilingPathEventArgs args) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.ProcessCompileErrors(System.CodeDom.Compiler.CompilerResults)">
+            <summary>設定 BuildProvider.ProcessCompileErrors(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.ProcessCompileErrorsCompilerResults">
+            <summary>設定 BuildProvider.ProcessCompileErrors(CompilerResults results) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.VirtualPathDependenciesGet">
+            <summary>設定 RazorBuildProvider.get_VirtualPathDependencies() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.CodeCompilerType">
+            <summary>設定 RazorBuildProvider.get_CodeCompilerType() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubRazorBuildProvider.VirtualPathDependencies">
+            <summary>設定 RazorBuildProvider.get_VirtualPathDependencies() 的 stub</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost">
+            <summary>System.Web.WebPages.Razor.WebCodeRazorHost 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.#ctor(System.String)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.#ctor(System.String,System.String)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToCodeLanguage">
+            <summary>附加委派以便將 StubWebCodeRazorHost.CodeLanguage 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToDefaultBaseClass">
+            <summary>附加委派以便將 StubWebCodeRazorHost.DefaultBaseClass 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToDefaultClassName">
+            <summary>附加委派以便將 StubWebCodeRazorHost.DefaultClassName 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToDefaultNamespace">
+            <summary>附加委派以便將 StubWebCodeRazorHost.DefaultNamespace 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToDesignTimeMode">
+            <summary>附加委派以便將 StubWebCodeRazorHost.DesignTimeMode 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToEnableInstrumentation">
+            <summary>附加委派以便將 StubWebCodeRazorHost.EnableInstrumentation 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToGeneratedClassContext">
+            <summary>附加委派以便將 StubWebCodeRazorHost.GeneratedClassContext 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToInstrumentedSourceFilePath">
+            <summary>附加委派以便將 StubWebCodeRazorHost.InstrumentedSourceFilePath 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToIsIndentingWithTabs">
+            <summary>附加委派以便將 StubWebCodeRazorHost.IsIndentingWithTabs 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToStaticHelpers">
+            <summary>附加委派以便將 StubWebCodeRazorHost.StaticHelpers 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.AttachBackingFieldToTabSize">
+            <summary>附加委派以便將 StubWebCodeRazorHost.TabSize 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.CodeLanguageGet">
+            <summary>設定 WebPageRazorHost.get_CodeLanguage() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.CodeLanguageSetRazorCodeLanguage">
+            <summary>設定 WebPageRazorHost.set_CodeLanguage(RazorCodeLanguage value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.CreateMarkupParser">
+            <summary>設定 WebPageRazorHost.CreateMarkupParser() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.CreateMarkupParser01">
+            <summary>設定 WebPageRazorHost.CreateMarkupParser() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DecorateCodeGenerator(System.Web.Razor.Generator.RazorCodeGenerator)">
+            <summary>設定 RazorEngineHost.DecorateCodeGenerator(RazorCodeGenerator incomingCodeGenerator) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DecorateCodeGeneratorRazorCodeGenerator">
+            <summary>設定 RazorEngineHost.DecorateCodeGenerator(RazorCodeGenerator incomingCodeGenerator) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DecorateCodeParser(System.Web.Razor.Parser.ParserBase)">
+            <summary>設定 RazorEngineHost.DecorateCodeParser(ParserBase incomingCodeParser) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DecorateCodeParserParserBase">
+            <summary>設定 RazorEngineHost.DecorateCodeParser(ParserBase incomingCodeParser) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DecorateMarkupParser(System.Web.Razor.Parser.ParserBase)">
+            <summary>設定 RazorEngineHost.DecorateMarkupParser(ParserBase incomingMarkupParser) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DecorateMarkupParserParserBase">
+            <summary>設定 RazorEngineHost.DecorateMarkupParser(ParserBase incomingMarkupParser) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_DefaultBaseClass() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultBaseClassSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultBaseClass(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultClassNameGet">
+            <summary>設定 WebPageRazorHost.get_DefaultClassName() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultClassNameSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultClassName(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultNamespaceGet">
+            <summary>設定 RazorEngineHost.get_DefaultNamespace() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultNamespaceSetString">
+            <summary>設定 RazorEngineHost.set_DefaultNamespace(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DesignTimeModeGet">
+            <summary>設定 RazorEngineHost.get_DesignTimeMode() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DesignTimeModeSetBoolean">
+            <summary>設定 RazorEngineHost.set_DesignTimeMode(Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.EnableInstrumentationGet">
+            <summary>設定 RazorEngineHost.get_EnableInstrumentation() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.EnableInstrumentationSetBoolean">
+            <summary>設定 RazorEngineHost.set_EnableInstrumentation(Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GeneratedClassContextGet">
+            <summary>設定 RazorEngineHost.get_GeneratedClassContext() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GeneratedClassContextSetGeneratedClassContext">
+            <summary>設定 RazorEngineHost.set_GeneratedClassContext(GeneratedClassContext value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GetClassName(System.String)">
+            <summary>設定 WebCodeRazorHost.GetClassName(String virtualPath) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GetClassNameString">
+            <summary>設定 WebCodeRazorHost.GetClassName(String virtualPath) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GetCodeLanguage">
+            <summary>設定 WebPageRazorHost.GetCodeLanguage() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GetCodeLanguage01">
+            <summary>設定 WebPageRazorHost.GetCodeLanguage() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.InitializeStub">
+            <summary>初始化 type StubWebCodeRazorHost 的新執行個體</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.InstrumentedSourceFilePathGet">
+            <summary>設定 WebPageRazorHost.get_InstrumentedSourceFilePath() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.InstrumentedSourceFilePathSetString">
+            <summary>設定 WebPageRazorHost.set_InstrumentedSourceFilePath(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.IsIndentingWithTabsGet">
+            <summary>設定 RazorEngineHost.get_IsIndentingWithTabs() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.IsIndentingWithTabsSetBoolean">
+            <summary>設定 RazorEngineHost.set_IsIndentingWithTabs(Boolean value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.PostProcessGeneratedCode(System.Web.Razor.Generator.CodeGeneratorContext)">
+            <summary>設定 WebCodeRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.PostProcessGeneratedCode(System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod)">
+            <summary>設定 RazorEngineHost.PostProcessGeneratedCode(CodeCompileUnit codeCompileUnit, CodeNamespace generatedNamespace, CodeTypeDeclaration generatedClass, CodeMemberMethod executeMethod) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.PostProcessGeneratedCodeCodeCompileUnitCodeNamespaceCodeTypeDeclarationCodeMemberMethod">
+            <summary>設定 RazorEngineHost.PostProcessGeneratedCode(CodeCompileUnit codeCompileUnit, CodeNamespace generatedNamespace, CodeTypeDeclaration generatedClass, CodeMemberMethod executeMethod) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.PostProcessGeneratedCodeCodeGeneratorContext">
+            <summary>設定 WebCodeRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.StaticHelpersGet">
+            <summary>設定 RazorEngineHost.get_StaticHelpers() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.StaticHelpersSetBoolean">
+            <summary>設定 RazorEngineHost.set_StaticHelpers(Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.TabSizeGet">
+            <summary>設定 RazorEngineHost.get_TabSize() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.TabSizeSetInt32">
+            <summary>設定 RazorEngineHost.set_TabSize(Int32 value) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.CodeLanguage">
+            <summary>設定 WebPageRazorHost.get_CodeLanguage() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultBaseClass">
+            <summary>設定 WebPageRazorHost.get_DefaultBaseClass() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultClassName">
+            <summary>設定 WebPageRazorHost.get_DefaultClassName() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DefaultNamespace">
+            <summary>設定 RazorEngineHost.get_DefaultNamespace() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.DesignTimeMode">
+            <summary>設定 RazorEngineHost.get_DesignTimeMode() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.EnableInstrumentation">
+            <summary>設定 RazorEngineHost.get_EnableInstrumentation() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.GeneratedClassContext">
+            <summary>設定 RazorEngineHost.get_GeneratedClassContext() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.InstrumentedSourceFilePath">
+            <summary>設定 WebPageRazorHost.get_InstrumentedSourceFilePath() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.IsIndentingWithTabs">
+            <summary>設定 RazorEngineHost.get_IsIndentingWithTabs() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.StaticHelpers">
+            <summary>設定 RazorEngineHost.get_StaticHelpers() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebCodeRazorHost.TabSize">
+            <summary>設定 RazorEngineHost.get_TabSize() 的 stub</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost">
+            <summary>System.Web.WebPages.Razor.WebPageRazorHost 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.#ctor(System.String)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.#ctor(System.String,System.String)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToCodeLanguage">
+            <summary>附加委派以便將 StubWebPageRazorHost.CodeLanguage 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToDefaultBaseClass">
+            <summary>附加委派以便將 StubWebPageRazorHost.DefaultBaseClass 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToDefaultClassName">
+            <summary>附加委派以便將 StubWebPageRazorHost.DefaultClassName 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToDefaultNamespace">
+            <summary>附加委派以便將 StubWebPageRazorHost.DefaultNamespace 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToDesignTimeMode">
+            <summary>附加委派以便將 StubWebPageRazorHost.DesignTimeMode 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToEnableInstrumentation">
+            <summary>附加委派以便將 StubWebPageRazorHost.EnableInstrumentation 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToGeneratedClassContext">
+            <summary>附加委派以便將 StubWebPageRazorHost.GeneratedClassContext 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToInstrumentedSourceFilePath">
+            <summary>附加委派以便將 StubWebPageRazorHost.InstrumentedSourceFilePath 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToIsIndentingWithTabs">
+            <summary>附加委派以便將 StubWebPageRazorHost.IsIndentingWithTabs 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToStaticHelpers">
+            <summary>附加委派以便將 StubWebPageRazorHost.StaticHelpers 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.AttachBackingFieldToTabSize">
+            <summary>附加委派以便將 StubWebPageRazorHost.TabSize 模擬為含有支援欄位的屬性。</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.CodeLanguageGet">
+            <summary>設定 WebPageRazorHost.get_CodeLanguage() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.CodeLanguageSetRazorCodeLanguage">
+            <summary>設定 WebPageRazorHost.set_CodeLanguage(RazorCodeLanguage value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.CreateMarkupParser">
+            <summary>設定 WebPageRazorHost.CreateMarkupParser() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.CreateMarkupParser01">
+            <summary>設定 WebPageRazorHost.CreateMarkupParser() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DecorateCodeGenerator(System.Web.Razor.Generator.RazorCodeGenerator)">
+            <summary>設定 RazorEngineHost.DecorateCodeGenerator(RazorCodeGenerator incomingCodeGenerator) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DecorateCodeGeneratorRazorCodeGenerator">
+            <summary>設定 RazorEngineHost.DecorateCodeGenerator(RazorCodeGenerator incomingCodeGenerator) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DecorateCodeParser(System.Web.Razor.Parser.ParserBase)">
+            <summary>設定 RazorEngineHost.DecorateCodeParser(ParserBase incomingCodeParser) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DecorateCodeParserParserBase">
+            <summary>設定 RazorEngineHost.DecorateCodeParser(ParserBase incomingCodeParser) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DecorateMarkupParser(System.Web.Razor.Parser.ParserBase)">
+            <summary>設定 RazorEngineHost.DecorateMarkupParser(ParserBase incomingMarkupParser) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DecorateMarkupParserParserBase">
+            <summary>設定 RazorEngineHost.DecorateMarkupParser(ParserBase incomingMarkupParser) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultBaseClassGet">
+            <summary>設定 WebPageRazorHost.get_DefaultBaseClass() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultBaseClassSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultBaseClass(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultClassNameGet">
+            <summary>設定 WebPageRazorHost.get_DefaultClassName() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultClassNameSetString">
+            <summary>設定 WebPageRazorHost.set_DefaultClassName(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultNamespaceGet">
+            <summary>設定 RazorEngineHost.get_DefaultNamespace() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultNamespaceSetString">
+            <summary>設定 RazorEngineHost.set_DefaultNamespace(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DesignTimeModeGet">
+            <summary>設定 RazorEngineHost.get_DesignTimeMode() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DesignTimeModeSetBoolean">
+            <summary>設定 RazorEngineHost.set_DesignTimeMode(Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.EnableInstrumentationGet">
+            <summary>設定 RazorEngineHost.get_EnableInstrumentation() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.EnableInstrumentationSetBoolean">
+            <summary>設定 RazorEngineHost.set_EnableInstrumentation(Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GeneratedClassContextGet">
+            <summary>設定 RazorEngineHost.get_GeneratedClassContext() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GeneratedClassContextSetGeneratedClassContext">
+            <summary>設定 RazorEngineHost.set_GeneratedClassContext(GeneratedClassContext value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GetClassName(System.String)">
+            <summary>設定 WebPageRazorHost.GetClassName(String virtualPath) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GetClassNameString">
+            <summary>設定 WebPageRazorHost.GetClassName(String virtualPath) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GetCodeLanguage">
+            <summary>設定 WebPageRazorHost.GetCodeLanguage() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GetCodeLanguage01">
+            <summary>設定 WebPageRazorHost.GetCodeLanguage() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.InitializeStub">
+            <summary>初始化 type StubWebPageRazorHost 的新執行個體</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.InstrumentedSourceFilePathGet">
+            <summary>設定 WebPageRazorHost.get_InstrumentedSourceFilePath() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.InstrumentedSourceFilePathSetString">
+            <summary>設定 WebPageRazorHost.set_InstrumentedSourceFilePath(String value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.IsIndentingWithTabsGet">
+            <summary>設定 RazorEngineHost.get_IsIndentingWithTabs() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.IsIndentingWithTabsSetBoolean">
+            <summary>設定 RazorEngineHost.set_IsIndentingWithTabs(Boolean value) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.PostProcessGeneratedCode(System.Web.Razor.Generator.CodeGeneratorContext)">
+            <summary>設定 WebPageRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.PostProcessGeneratedCode(System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod)">
+            <summary>設定 RazorEngineHost.PostProcessGeneratedCode(CodeCompileUnit codeCompileUnit, CodeNamespace generatedNamespace, CodeTypeDeclaration generatedClass, CodeMemberMethod executeMethod) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.PostProcessGeneratedCodeCodeCompileUnitCodeNamespaceCodeTypeDeclarationCodeMemberMethod">
+            <summary>設定 RazorEngineHost.PostProcessGeneratedCode(CodeCompileUnit codeCompileUnit, CodeNamespace generatedNamespace, CodeTypeDeclaration generatedClass, CodeMemberMethod executeMethod) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.PostProcessGeneratedCodeCodeGeneratorContext">
+            <summary>設定 WebPageRazorHost.PostProcessGeneratedCode(CodeGeneratorContext context) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.StaticHelpersGet">
+            <summary>設定 RazorEngineHost.get_StaticHelpers() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.StaticHelpersSetBoolean">
+            <summary>設定 RazorEngineHost.set_StaticHelpers(Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.TabSizeGet">
+            <summary>設定 RazorEngineHost.get_TabSize() 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.TabSizeSetInt32">
+            <summary>設定 RazorEngineHost.set_TabSize(Int32 value) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.CodeLanguage">
+            <summary>設定 WebPageRazorHost.get_CodeLanguage() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultBaseClass">
+            <summary>設定 WebPageRazorHost.get_DefaultBaseClass() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultClassName">
+            <summary>設定 WebPageRazorHost.get_DefaultClassName() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DefaultNamespace">
+            <summary>設定 RazorEngineHost.get_DefaultNamespace() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.DesignTimeMode">
+            <summary>設定 RazorEngineHost.get_DesignTimeMode() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.EnableInstrumentation">
+            <summary>設定 RazorEngineHost.get_EnableInstrumentation() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.GeneratedClassContext">
+            <summary>設定 RazorEngineHost.get_GeneratedClassContext() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.InstrumentedSourceFilePath">
+            <summary>設定 WebPageRazorHost.get_InstrumentedSourceFilePath() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.IsIndentingWithTabs">
+            <summary>設定 RazorEngineHost.get_IsIndentingWithTabs() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.StaticHelpers">
+            <summary>設定 RazorEngineHost.get_StaticHelpers() 的 stub</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebPageRazorHost.TabSize">
+            <summary>設定 RazorEngineHost.get_TabSize() 的 stub</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory">
+            <summary>System.Web.WebPages.Razor.WebRazorHostFactory 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.CreateHost(System.String,System.String)">
+            <summary>設定 WebRazorHostFactory.CreateHost(String virtualPath, String physicalPath) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.CreateHostStringString">
+            <summary>設定 WebRazorHostFactory.CreateHost(String virtualPath, String physicalPath) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.InitializeStub">
+            <summary>初始化 type StubWebRazorHostFactory 的新執行個體</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Razor.Fakes.StubWebRazorHostFactory.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+    </members>
+</doc>

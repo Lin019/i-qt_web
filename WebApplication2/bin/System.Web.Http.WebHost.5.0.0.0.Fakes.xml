@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.Http.WebHost.5.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Http.Fakes.ShimGlobalConfiguration">
+            <summary>System.Web.Http.GlobalConfiguration 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.Http.Fakes.ShimGlobalConfiguration.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.Fakes.ShimGlobalConfiguration.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.Fakes.ShimGlobalConfiguration.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.ConfigurationGet">
+            <summary>設定 GlobalConfiguration.get_Configuration() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.ConfigureActionOfHttpConfiguration">
+            <summary>設定 GlobalConfiguration.Configure(Action`1&lt;HttpConfiguration&gt; configurationCallback) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.CreateConfiguration">
+            <summary>設定 GlobalConfiguration.CreateConfiguration() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.CreateDefaultHandler">
+            <summary>設定 GlobalConfiguration.CreateDefaultHandler() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.CreateDefaultServer">
+            <summary>設定 GlobalConfiguration.CreateDefaultServer() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.DefaultHandlerGet">
+            <summary>設定 GlobalConfiguration.get_DefaultHandler() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.DefaultServerGet">
+            <summary>設定 GlobalConfiguration.get_DefaultServer() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.Reset">
+            <summary>設定 GlobalConfiguration.Reset() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration.StaticConstructor">
+            <summary>設定 GlobalConfiguration.GlobalConfiguration() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration._CreateConfigurationb__0">
+            <summary>設定 GlobalConfiguration.&lt;CreateConfiguration&gt;b__0() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration._CreateDefaultHandlerb__2">
+            <summary>設定 GlobalConfiguration.&lt;CreateDefaultHandler&gt;b__2() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimGlobalConfiguration._CreateDefaultServerb__4">
+            <summary>設定 GlobalConfiguration.&lt;CreateDefaultServer&gt;b__4() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.Fakes.ShimRouteCollectionExtensions">
+            <summary>System.Web.Http.RouteCollectionExtensions 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.Http.Fakes.ShimRouteCollectionExtensions.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.Fakes.ShimRouteCollectionExtensions.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.Fakes.ShimRouteCollectionExtensions.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimRouteCollectionExtensions.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimRouteCollectionExtensions.MapHttpRouteRouteCollectionStringString">
+            <summary>設定 RouteCollectionExtensions.MapHttpRoute(RouteCollection routes, String name, String routeTemplate) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimRouteCollectionExtensions.MapHttpRouteRouteCollectionStringStringObject">
+            <summary>設定 RouteCollectionExtensions.MapHttpRoute(RouteCollection routes, String name, String routeTemplate, Object defaults) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimRouteCollectionExtensions.MapHttpRouteRouteCollectionStringStringObjectObject">
+            <summary>設定 RouteCollectionExtensions.MapHttpRoute(RouteCollection routes, String name, String routeTemplate, Object defaults, Object constraints) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.Fakes.ShimRouteCollectionExtensions.MapHttpRouteRouteCollectionStringStringObjectObjectHttpMessageHandler">
+            <summary>設定 RouteCollectionExtensions.MapHttpRoute(RouteCollection routes, String name, String routeTemplate, Object defaults, Object constraints, HttpMessageHandler handler) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler">
+            <summary>System.Web.Http.WebHost.HttpControllerHandler 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.#ctor(System.Web.Http.WebHost.HttpControllerHandler)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.Bind(System.Web.IHttpAsyncHandler)">
+            <summary>將介面的成員繫結至填充碼。</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.Bind(System.Web.IHttpHandler)">
+            <summary>將介面的成員繫結至填充碼。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.AddHeaderToHttpRequestMessageHttpRequestMessageStringStringArray">
+            <summary>設定 HttpControllerHandler.AddHeaderToHttpRequestMessage(HttpRequestMessage httpRequestMessage, String headerName, String[] headerValues) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ClearContentAndHeadersHttpResponseBase">
+            <summary>設定 HttpControllerHandler.ClearContentAndHeaders(HttpResponseBase httpResponseBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ConstructorRouteData">
+            <summary>設定 HttpControllerHandler.HttpControllerHandler(RouteData routeData) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ConstructorRouteDataHttpMessageHandler">
+            <summary>設定 HttpControllerHandler.HttpControllerHandler(RouteData routeData, HttpMessageHandler handler) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ConvertRequestHttpContextBase">
+            <summary>設定 HttpControllerHandler.ConvertRequest(HttpContextBase httpContextBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ConvertResponseHttpContextBaseHttpResponseMessageHttpRequestMessage">
+            <summary>設定 HttpControllerHandler.ConvertResponse(HttpContextBase httpContextBase, HttpResponseMessage response, HttpRequestMessage request) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.CopyHeadersHttpHeadersHttpContextBase">
+            <summary>設定 HttpControllerHandler.CopyHeaders(HttpHeaders from, HttpContextBase to) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.CopyResponseStatusAndHeadersHttpContextBaseHttpResponseMessage">
+            <summary>設定 HttpControllerHandler.CopyResponseStatusAndHeaders(HttpContextBase httpContextBase, HttpResponseMessage response) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.CreateEmptyErrorResponseHttpResponseBase">
+            <summary>設定 HttpControllerHandler.CreateEmptyErrorResponse(HttpResponseBase httpResponseBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.CreateErrorResponseAsyncCoreHttpResponseMessageHttpResponseBase">
+            <summary>設定 HttpControllerHandler.CreateErrorResponseAsyncCore(HttpResponseMessage errorResponse, HttpResponseBase httpResponseBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.CreateErrorResponseAsyncHttpContextBaseHttpContentHttpRequestMessageException">
+            <summary>設定 HttpControllerHandler.CreateErrorResponseAsync(HttpContextBase httpContextBase, HttpContent responseContent, HttpRequestMessage request, Exception exception) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.EnsureSuppressFormsAuthenticationRedirectHttpContextBase">
+            <summary>設定 HttpControllerHandler.EnsureSuppressFormsAuthenticationRedirect(HttpContextBase httpContextBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ProcessRequestAsyncCoreHttpContextBase">
+            <summary>設定 HttpControllerHandler.ProcessRequestAsyncCore(HttpContextBase contextBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.ProcessRequestAsyncHttpContext">
+            <summary>設定 HttpControllerHandler.ProcessRequestAsync(HttpContext context) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.RetrieveClientCertificateHttpRequestMessage">
+            <summary>設定 HttpControllerHandler.RetrieveClientCertificate(HttpRequestMessage request) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.StaticConstructor">
+            <summary>設定 HttpControllerHandler.HttpControllerHandler() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.WriteBufferedResponseContentAsyncHttpContextBaseHttpContentHttpRequestMessage">
+            <summary>設定 HttpControllerHandler.WriteBufferedResponseContentAsync(HttpContextBase httpContextBase, HttpContent responseContent, HttpRequestMessage request) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.WriteResponseContentAsyncHttpContextBaseHttpResponseMessageHttpRequestMessage">
+            <summary>設定 HttpControllerHandler.WriteResponseContentAsync(HttpContextBase httpContextBase, HttpResponseMessage response, HttpRequestMessage request) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.WriteStreamedResponseContentAsyncHttpContextBaseHttpContent">
+            <summary>設定 HttpControllerHandler.WriteStreamedResponseContentAsync(HttpContextBase httpContextBase, HttpContent responseContent) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler._cctorb__1c">
+            <summary>設定 HttpControllerHandler.&lt;.cctor&gt;b__1c() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler._cctorb__1dHttpContextBase">
+            <summary>設定 HttpControllerHandler.&lt;.cctor&gt;b__1d(HttpContextBase httpContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler._cctorb__1eHttpContextBase">
+            <summary>設定 HttpControllerHandler.&lt;.cctor&gt;b__1e(HttpContextBase httpContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler._cctorb__1f">
+            <summary>設定 HttpControllerHandler.&lt;.cctor&gt;b__1f() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.AllInstances.ProcessRequestAsyncCoreHttpContextBase">
+            <summary>設定 HttpControllerHandler.ProcessRequestAsyncCore(HttpContextBase contextBase) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerHandler.AllInstances.ProcessRequestAsyncHttpContext">
+            <summary>設定 HttpControllerHandler.ProcessRequestAsync(HttpContext context) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler">
+            <summary>System.Web.Http.WebHost.HttpControllerRouteHandler 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.#ctor(System.Web.Http.WebHost.HttpControllerRouteHandler)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.Bind(System.Web.Routing.IRouteHandler)">
+            <summary>將介面的成員繫結至填充碼。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.Constructor">
+            <summary>設定 HttpControllerRouteHandler.HttpControllerRouteHandler() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.GetHttpHandlerRequestContext">
+            <summary>設定 HttpControllerRouteHandler.GetHttpHandler(RequestContext requestContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.InstanceGet">
+            <summary>設定 HttpControllerRouteHandler.get_Instance() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.StaticConstructor">
+            <summary>設定 HttpControllerRouteHandler.HttpControllerRouteHandler() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.SystemWebRoutingIRouteHandlerGetHttpHandlerRequestContext">
+            <summary>設定 HttpControllerRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler._cctorb__0">
+            <summary>設定 HttpControllerRouteHandler.&lt;.cctor&gt;b__0() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.AllInstances.GetHttpHandlerRequestContext">
+            <summary>設定 HttpControllerRouteHandler.GetHttpHandler(RequestContext requestContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimHttpControllerRouteHandler.AllInstances.SystemWebRoutingIRouteHandlerGetHttpHandlerRequestContext">
+            <summary>設定 HttpControllerRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector">
+            <summary>System.Web.Http.WebHost.WebHostBufferPolicySelector 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.#ctor(System.Web.Http.WebHost.WebHostBufferPolicySelector)">
+            <summary>初始化指定執行個體的新填充碼</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.Bind(System.Web.Http.Hosting.IHostBufferPolicySelector)">
+            <summary>將介面的成員繫結至填充碼。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.Constructor">
+            <summary>設定 WebHostBufferPolicySelector.WebHostBufferPolicySelector() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.UseBufferedInputStreamObject">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedInputStream(Object hostContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.UseBufferedOutputStreamHttpResponseMessage">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedOutputStream(HttpResponseMessage response) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.AllInstances">
+            <summary>定義所有執行個體成員的填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.AllInstances.UseBufferedInputStreamObject">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedInputStream(Object hostContext) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.ShimWebHostBufferPolicySelector.AllInstances.UseBufferedOutputStreamHttpResponseMessage">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedOutputStream(HttpResponseMessage response) 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler">
+            <summary>System.Web.Http.WebHost.HttpControllerHandler 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.#ctor(System.Web.Routing.RouteData)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.#ctor(System.Web.Routing.RouteData,System.Net.Http.HttpMessageHandler)">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.InitializeStub">
+            <summary>初始化 type StubHttpControllerHandler 的新執行個體</summary>
+        </member>
+        <member name="F:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.IsReusableGet">
+            <summary>設定 HttpTaskAsyncHandler.get_IsReusable() 的 stub</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>設定 HttpTaskAsyncHandler.ProcessRequest(HttpContext context) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.ProcessRequestAsync(System.Web.HttpContext)">
+            <summary>設定 HttpControllerHandler.ProcessRequestAsync(HttpContext context) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.ProcessRequestAsyncHttpContext">
+            <summary>設定 HttpControllerHandler.ProcessRequestAsync(HttpContext context) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.ProcessRequestHttpContext">
+            <summary>設定 HttpTaskAsyncHandler.ProcessRequest(HttpContext context) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerHandler.IsReusable">
+            <summary>設定 HttpTaskAsyncHandler.get_IsReusable() 的 stub</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler">
+            <summary>System.Web.Http.WebHost.HttpControllerRouteHandler 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)">
+            <summary>設定 HttpControllerRouteHandler.GetHttpHandler(RequestContext requestContext) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.GetHttpHandlerRequestContext">
+            <summary>設定 HttpControllerRouteHandler.GetHttpHandler(RequestContext requestContext) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.InitializeStub">
+            <summary>初始化 type StubHttpControllerRouteHandler 的新執行個體</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubHttpControllerRouteHandler.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+        <member name="T:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector">
+            <summary>System.Web.Http.WebHost.WebHostBufferPolicySelector 的 stub 類型</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.#ctor">
+            <summary>初始化新的執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.InitializeStub">
+            <summary>初始化 type StubWebHostBufferPolicySelector 的新執行個體</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.UseBufferedInputStream(System.Object)">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedInputStream(Object hostContext) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.UseBufferedInputStreamObject">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedInputStream(Object hostContext) 的 stub</summary>
+        </member>
+        <member name="M:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.UseBufferedOutputStream(System.Net.Http.HttpResponseMessage)">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedOutputStream(HttpResponseMessage response) 的 stub</summary>
+        </member>
+        <member name="F:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.UseBufferedOutputStreamHttpResponseMessage">
+            <summary>設定 WebHostBufferPolicySelector.UseBufferedOutputStream(HttpResponseMessage response) 的 stub</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.CallBase">
+            <summary>取得或設定值，此值表示是否應呼叫基底方法，而不採取後援行為</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.InstanceBehavior">
+            <summary>取得或設定執行個體行為。</summary>
+        </member>
+        <member name="P:System.Web.Http.WebHost.Fakes.StubWebHostBufferPolicySelector.InstanceObserver">
+            <summary>取得或設定執行個體觀察者。</summary>
+        </member>
+    </members>
+</doc>

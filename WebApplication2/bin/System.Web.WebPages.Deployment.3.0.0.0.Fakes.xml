@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.WebPages.Deployment.3.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode">
+            <summary>System.Web.WebPages.Deployment.PreApplicationStartCode 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.FindPreStartInitMethodTypeString">
+            <summary>設定 PreApplicationStartCode.FindPreStartInitMethod(Type type, String methodName) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.GetPreStartInitMethodsFromAssemblyCollectionIEnumerableOfAssembly">
+            <summary>設定 PreApplicationStartCode.GetPreStartInitMethodsFromAssemblyCollection(IEnumerable`1&lt;Assembly&gt; assemblies) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.LoadAssemblyAssemblyName">
+            <summary>設定 PreApplicationStartCode.LoadAssembly(AssemblyName name) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.LoadWebPagesVersion">
+            <summary>設定 PreApplicationStartCode.LoadWebPages(Version version) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.OnChangedStringObjectCacheItemRemovedReason">
+            <summary>設定 PreApplicationStartCode.OnChanged(String key, Object value, CacheItemRemovedReason reason) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.RegisterForChangeNotifications">
+            <summary>設定 PreApplicationStartCode.RegisterForChangeNotifications() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.Start">
+            <summary>設定 PreApplicationStartCode.Start() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.StartCore">
+            <summary>設定 PreApplicationStartCode.StartCore() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimPreApplicationStartCode.StaticConstructor">
+            <summary>設定 PreApplicationStartCode.PreApplicationStartCode() 的 填充碼</summary>
+        </member>
+        <member name="T:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment">
+            <summary>System.Web.WebPages.Deployment.WebPagesDeployment 的填充碼類型</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.#ctor">
+            <summary>初始化新填充碼執行個體</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.BehaveAsCurrent">
+            <summary>指派填充類型之所有方法的 &apos;Current&apos; 行為</summary>
+        </member>
+        <member name="M:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.BehaveAsNotImplemented">
+            <summary>指派填充類型之所有方法的 &apos;NotImplemented&apos; 行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.Behavior">
+            <summary>指派填充類型之所有方法的行為</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetAppSettingsString">
+            <summary>設定 WebPagesDeployment.GetAppSettings(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetAssemblyPathVersion">
+            <summary>設定 WebPagesDeployment.GetAssemblyPath(Version version) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetBinDirectoryString">
+            <summary>設定 WebPagesDeployment.GetBinDirectory(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetCachedFileName">
+            <summary>設定 WebPagesDeployment.GetCachedFileName() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetEnabledNameValueCollection">
+            <summary>設定 WebPagesDeployment.GetEnabled(NameValueCollection appSettings) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetExplicitWebPagesVersionString">
+            <summary>設定 WebPagesDeployment.GetExplicitWebPagesVersion(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetIncompatibleDependenciesString">
+            <summary>設定 WebPagesDeployment.GetIncompatibleDependencies(String appPath) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetMaxVersion">
+            <summary>設定 WebPagesDeployment.GetMaxVersion() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetVersionFromConfigNameValueCollection">
+            <summary>設定 WebPagesDeployment.GetVersionFromConfig(NameValueCollection appSettings) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetVersionInternalNameValueCollectionVersionVersion">
+            <summary>設定 WebPagesDeployment.GetVersionInternal(NameValueCollection appSettings, Version binVersion, Version defaultVersion) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetVersionString">
+            <summary>設定 WebPagesDeployment.GetVersion(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetVersionWithoutEnabledCheckInternalStringVersion">
+            <summary>設定 WebPagesDeployment.GetVersionWithoutEnabledCheckInternal(String path, Version defaultVersion) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetVersionWithoutEnabledCheckString">
+            <summary>設定 WebPagesDeployment.GetVersionWithoutEnabledCheck(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.GetWebPagesAssemblies">
+            <summary>設定 WebPagesDeployment.GetWebPagesAssemblies() 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.IsEnabledString">
+            <summary>設定 WebPagesDeployment.IsEnabled(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.IsExplicitlyDisabledNameValueCollection">
+            <summary>設定 WebPagesDeployment.IsExplicitlyDisabled(NameValueCollection appSettings) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.IsExplicitlyDisabledString">
+            <summary>設定 WebPagesDeployment.IsExplicitlyDisabled(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.IsWebPagesFileString">
+            <summary>設定 WebPagesDeployment.IsWebPagesFile(String file) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.RemoveTrailingSlashString">
+            <summary>設定 WebPagesDeployment.RemoveTrailingSlash(String path) 的 填充碼</summary>
+        </member>
+        <member name="P:System.Web.WebPages.Deployment.Fakes.ShimWebPagesDeployment.StaticConstructor">
+            <summary>設定 WebPagesDeployment.WebPagesDeployment() 的 填充碼</summary>
+        </member>
+    </members>
+</doc>
