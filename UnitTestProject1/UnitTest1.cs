@@ -36,5 +36,27 @@ namespace UnitTestProject1
             Assert.IsNotNull(result);
             Assert.AreEqual(testTicket.TicketId, data.TicketId);
         }
+
+        [TestMethod]
+        public void PassFormDate()
+        {
+            RWDtestController controller = new RWDtestController();
+
+            Ticket testTicket = new Ticket
+            {
+                TicketId = 6,
+                From = "Paris",
+                To = "Copenhagen",
+                Departure = Convert.ToDateTime("2017/07/24"),
+                Return = Convert.ToDateTime("2017/07/30"),
+                Adult = 2,
+                Child = 0
+            };
+
+            ActionResult RedirectToNewPage = controller.RedirectToNewPage(testTicket) as ActionResult;
+            var NewPage = controller.NewPage() as ViewResult;
+
+            Assert.AreEqual(testTicket, NewPage.Model);
+        }
     }
 }

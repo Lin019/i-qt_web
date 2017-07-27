@@ -47,7 +47,7 @@ namespace WebApplication2.Controllers
             if (customerTicket == null && (bool)getSend)
                 return View("Error");
           
-            return View(customerTicket);
+            return View(model: customerTicket);
         }
 
         public ActionResult RedirectToNewPage(Ticket ticket)
