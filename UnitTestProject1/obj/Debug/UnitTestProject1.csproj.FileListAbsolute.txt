@@ -65,7 +65,6 @@ C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\Microsoft.Owin.S
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\Microsoft.Owin.Security.Google.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\Microsoft.Owin.Security.MicrosoftAccount.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\Microsoft.Owin.Security.Twitter.dll
-C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\WebGrease.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\Antlr3.Runtime.pdb
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\EntityFramework.SqlServer.xml
@@ -80,7 +79,6 @@ C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\Microsof
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\Microsoft.Owin.Security.Twitter.resources.dll
-C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\System.Web.Helpers.resources.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
 C:\Users\DavidLin\Documents\i-qt_web\UnitTestProject1\bin\Debug\zh-Hant\System.Web.Razor.resources.dll
