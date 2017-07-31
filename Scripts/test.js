@@ -56,11 +56,11 @@ $(function () {
             $("ul li .bubble-reply").last().append(replyHtml);
 
             if (food == "coffee")
-                $(".chat table").last().html("<img src=\"/Images/food_coffee_beans.jpg\"><a href=\"#\">check</a>");
+                $(".chat table").last().html("<img src=\"Images/food_coffee_beans.jpg\"><a href=\"#\">check</a>");
             else if (food == "strawberry")
-                $(".chat table").last().html("<img src=\"/Images/food_strawberry.jpg\"><a href=\"#\">check</a>");
+                $(".chat table").last().html("<img src=\"Images/food_strawberry.jpg\"><a href=\"#\">check</a>");
             else
-                $(".chat table").last().html("<img src=\"/Images/food_bread.jpg\"><a href=\"#\">check</a>");
+                $(".chat table").last().html("<img src=\"Images/food_bread.jpg\"><a href=\"#\">check</a>");
 
             $(".chat").scrollTop($(".chat ul").height());
         }, 3000);
