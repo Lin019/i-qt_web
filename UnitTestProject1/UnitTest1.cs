@@ -40,6 +40,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void PassFormDate()
         {
+            //arrange
             RWDtestController controller = new RWDtestController();
 
             Ticket testTicket = new Ticket
@@ -53,9 +54,11 @@ namespace UnitTestProject1
                 Child = 0
             };
 
+            //act
             ActionResult RedirectToNewPage = controller.RedirectToNewPage(testTicket) as ActionResult;
             var NewPage = controller.NewPage() as ViewResult;
 
+            //assert
             Assert.AreEqual(testTicket, NewPage.Model);
         }
     }
