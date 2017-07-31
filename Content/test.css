@@ -119,6 +119,21 @@ table a {
     font-size: 16px;
 }
 
+.bubble-reply table td {
+	text-align: center;
+	border-bottom: 2px #eee solid;
+}
+
+.bubble-reply table tr:last-child td {
+	border-bottom: none;
+}
+
+.bubble-reply img {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
 /*option*/
 .option {
     width: 100%;
