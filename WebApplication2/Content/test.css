@@ -1,5 +1,6 @@
-﻿body {
+﻿html, body {
     background-color: #FFEEDC;
+    height: 100%;
 }
 
 .container{
@@ -57,6 +58,11 @@ table a {
     overflow: auto;
 }
 
+.warpper {
+    position: relative;
+    height: auto;
+}
+
 .chat-user {
     margin: 2px;
     display: inline-flexbox;
@@ -72,14 +78,14 @@ table a {
     display: inline-block;
     height: 30px;
     width: 30px;
-    resize:none;
+    resize: none;
     margin-left: 10px;
     border-radius: 15px;
     background-color: #A0522D;
 }
 
 .bubble {
-    border:1.5px #666 solid;
+    border: 1.5px #666 solid;
     border-radius:10px;
     width: auto;
     display: flexbox;
@@ -89,8 +95,6 @@ table a {
     background-color:#FFE4C4;
     padding: 2px;
 }
-
-
 
 .flex {
     display: flex;
@@ -119,15 +123,34 @@ table a {
     font-size: 16px;
 }
 
+.bubble-reply table td {
+	text-align: center;
+	border-bottom: 2px #eee solid;
+}
+
+.bubble-reply table tr:last-child td {
+	border-bottom: none;
+}
+
+.bubble-reply img {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
 /*option*/
 .option {
     width: 100%;
-    position: fixed;
-    height:auto;
-    bottom: 60px;
+    height: auto; 
     text-align: center;
+}
+
+.warpper {
+    position: relative;
+    min-height: 100%;
     overflow: hidden;
 }
+
 
 .bubble-option {
     border:1.5px #666 solid;
@@ -140,35 +163,42 @@ table a {
     padding: 2px;
 }
 
+.bubble-option a {
+    display: block;
+    margin:2px;
+    word-break:break-all;
+    font-size: 16px;
+}
+
 .hide {
     display: none;
 }
 
 /* bottom navbar */
+
 form {
     overflow: hidden;
     height: 51px;
+    display: flex;
 }
 
 .submit {
    margin: 0;
    border: none;
-   width: 51px;
+   width: 52px;
    height: 51px;
-   display: block;
+   display: flex;
    background-color: #86542B;
-   float: right;
 }
 
 .tri {
+    align-self: center;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 10px 0 10px 20px;
     border-color: transparent transparent transparent #D8C49D;
-    display: block;
-    margin: 15px;
-    margin-left:18px;
+    margin: 0 auto;
 }
 
 .text-area {
@@ -177,7 +207,7 @@ form {
     float: left;
     align-items:stretch;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 10px;	
     background-color: #EFDDCC;
 }
 
@@ -188,15 +218,13 @@ form {
 }
 
 .textbox {
-    margin: auto;
+    align-self: center;
+    padding-left: 5px;
+    padding-right: 5px;
     border: 2px solid #808080;
     background-color: #FFF;
     height: 60%;
     width: 100%;
-    position: relative;
-    display: block;
-    margin-top : 10px;
-    vertical-align:middle;
 }
 
 /**/

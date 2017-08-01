@@ -314,6 +314,7 @@
     <Content Include="Scripts\menu.js" />
     <Content Include="Scripts\jquery.redirect.js" />
     <Content Include="Scripts\newPage.js" />
+    <Content Include="Scripts\style.js" />
     <Content Include="Views\Home\RWDtest.html" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap-datepicker.min.js" />
