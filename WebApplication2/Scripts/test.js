@@ -6,8 +6,6 @@
 */
 $(function () {
 
-    $(".wapper").height = $(".chat").height();
-
     $("#home").click(function () {
         window.location.href = 'SynonymCreate.html';
     })
@@ -15,9 +13,7 @@ $(function () {
     //Add chat bubble and reply
     $(".submit").click(function () {
 
-        adjustChatHeight();
-
-        var innerHtml = "<li class =\"chat-user\"><span class=\"bubble\"><p>hi</p></span></li>"
+        var innerHtml = "<li class =\"chat-user\"><span class=\"bubble bubble-user\"><p>hi</p></span></li>"
         var inputText = $(".textbox").val();
 
         if ($(".textbox").val() != "") {
@@ -28,7 +24,7 @@ $(function () {
             else {
                 $("ul").append(innerHtml);
             }
-            $(".chat .chat-user p").last().text(inputText);            
+            $(".chat-area .chat-user p").last().text(inputText);
             $(".textbox").val("");
             scrollToBottom();
 
@@ -47,7 +43,7 @@ $(function () {
     function loading() {
         var replyHtml = "<li class =\"chat-reply\"><span class=\"circle\"></span></li>"
 
-        var loadingHtml = "<div class=\"flex\"><span class=\"bubble-reply\"><p class=\"saving\"><span>．</span><span>．</span><span>．</span></p></span></div>"
+        var loadingHtml = "<div class=\"flex\"><span class=\"bubble bubble-reply\"><p class=\"saving\"><span>．</span><span>．</span><span>．</span></p></span></div>"
 
         setTimeout(function () {
             $("ul").append(replyHtml);
@@ -65,11 +61,11 @@ $(function () {
             $("ul li .bubble-reply").last().append(replyHtml);
 
             if (food == "coffee")
-                $(".chat table").last().html("<tr><td><img src=\"Images/food_coffee_beans.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
+                $(".chat-area table").last().html("<tr><td><img src=\"Images/food_coffee_beans.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
             else if (food == "strawberry")
-                $(".chat table").last().html("<tr><td><img src=\"Images/food_strawberry.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
+                $(".chat-area table").last().html("<tr><td><img src=\"Images/food_strawberry.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
             else
-                $(".chat table").last().html("<tr><td><img src=\"Images/food_bread.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
+                $(".chat-area table").last().html("<tr><td><img src=\"Images/food_bread.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
 
             scrollToBottom();
         }, 3000);
@@ -82,7 +78,7 @@ $(function () {
         setTimeout(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
-            $(".chat p").last().text(replyText);
+            $(".chat-area p").last().text(replyText);
             scrollToBottom();
 
         }, 3000);
@@ -95,9 +91,8 @@ $(function () {
         setTimeout(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
-            $(".chat p").last().text("請問你要查些什麼呢？");
+            $(".chat-area p").last().text("請問你要查些什麼呢？");
             toggleOption(true);
-            adjustChatHeight();
             scrollToBottom();
         }, 3000);
     }
@@ -105,12 +100,11 @@ $(function () {
     //click at one of the option
     if ($(".option a").click(function () {
 
-        var innerHtml = "<li class =\"chat-user\"><span class=\"bubble\"><p>hi</p></span></li>"
+        var innerHtml = "<li class =\"chat-user\"><span class=\"bubble bubble-user\"><p>hi</p></span></li>"
         $("ul").append(innerHtml);
-        $(".chat .chat-user p").last().text($(this).text());
+        $(".chat-area .chat-user p").last().text($(this).text());
 
         toggleOption(false);
-        adjustChatHeight();
 
         scrollToBottom();
 
@@ -119,7 +113,7 @@ $(function () {
     }))
 
     function scrollToBottom() {
-        $(".chat").scrollTop($(".chat ul").height());
+        $(".chat-area").scrollTop($(".chat-area ul").height());
     }
 
     //toggle option on or off
@@ -132,13 +126,6 @@ $(function () {
         }
     }
 
-    //adjust height of the chat area
-    function adjustChatHeight() {
-        if ($(".option").hasClass("hide"))
-            $(".chat").css("bottom", "60px");
-        else
-            $(".chat").css("bottom", "60px");
-    }
 
     //Prevent submission while pressing Enter key
     $("form").keypress(function (e) {

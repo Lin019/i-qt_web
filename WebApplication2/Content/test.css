@@ -7,6 +7,10 @@
     left: 0;
 }
 
+.flex {
+    display: flex;
+}
+
 /* top navbar */
 .navbar-fixed-top {
     background-color: #7C421B;
@@ -23,34 +27,39 @@
 /* chat area */
 div ul {
     list-style-type: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    min-height: calc(100% - 48px);
 }
+
 div ul li{
     display: inline-block;
     width: 60%;
     padding-bottom: 15px;
 }
+
 ul form {
     height: auto;
     overflow: hidden;
     clear: both;
 }
+
 table img {
     width: 100%;
     height: auto;
     text-align: center;
 }
 
-table a {
-    
+.bubble img {
+    -webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 
-.chat {
+.chat-area {
     margin-top: 0px;
     padding-top: 10px;
-    height: auto;
     width: 100%;
     position: fixed;
     top: 50px;
@@ -58,14 +67,8 @@ table a {
     overflow: auto;
 }
 
-.warpper {
-    position: relative;
-    height: auto;
-}
-
 .chat-user {
     margin: 2px;
-    display: inline-flexbox;
     float: right;
 }
 
@@ -78,7 +81,6 @@ table a {
     display: inline-block;
     height: 30px;
     width: 30px;
-    resize: none;
     margin-left: 10px;
     border-radius: 15px;
     background-color: #A0522D;
@@ -87,36 +89,26 @@ table a {
 .bubble {
     border: 1.5px #666 solid;
     border-radius:10px;
-    width: auto;
+    margin: 0;
+    padding: 2px;
+}
+
+.bubble-user {
     display: flexbox;
     float: right;
-    margin: 0;
     margin-right: 10px;
     background-color:#FFE4C4;
-    padding: 2px;
 }
 
-.flex {
-    display: flex;
-}
 .bubble-reply {
-    border:1.5px #CD853F solid;
-    border-radius:10px;
+    border-color: #CD853F;
     float: left;
-    margin: 0;
     margin-left: 10px;
     background-color: #fff;
-    padding: 2px;
 }
 
-.bubble p {
-    display: block;
-    margin:2px;
-    word-break:break-all;
-    font-size: 16px;
-}
-
-.bubble-reply p {
+.bubble p,
+.bubble a {
     display: block;
     margin:2px;
     word-break:break-all;
@@ -128,46 +120,18 @@ table a {
 	border-bottom: 2px #eee solid;
 }
 
-.bubble-reply table tr:last-child td {
-	border-bottom: none;
-}
-
-.bubble-reply img {
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-}
-
 /*option*/
 .option {
     width: 100%;
     height: auto; 
     text-align: center;
+    padding-bottom: 15px;
 }
-
-.warpper {
-    position: relative;
-    min-height: 100%;
-    overflow: hidden;
-}
-
 
 .bubble-option {
-    border:1.5px #666 solid;
-    border-radius:10px;
-    width: auto;
     display: inline-block;
-    margin: 0;
     margin-right: 10px;
     background-color:#FFF;
-    padding: 2px;
-}
-
-.bubble-option a {
-    display: block;
-    margin:2px;
-    word-break:break-all;
-    font-size: 16px;
 }
 
 .hide {
@@ -205,7 +169,7 @@ form {
     margin: 0;
     width: calc(100% - 52px);
     float: left;
-    align-items:stretch;
+    align-items: stretch;
     padding-right: 10px;
     padding-left: 10px;	
     background-color: #EFDDCC;
@@ -231,37 +195,22 @@ form {
 
 
 @keyframes blink {
-
-    0% {
-      opacity: .2;
-    }
-
-    20% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: .2;
-    }
+    0% { opacity: .2; }
+    20% { opacity: 1; }
+    100% { opacity: .2; }
 }
 
 .saving span {
-
     animation-name: blink;
-
     animation-duration: 1.4s;
-
     animation-iteration-count: infinite;
-
     animation-fill-mode: both;
 }
 
 .saving span:nth-child(2) {
-
     animation-delay: .2s;
 }
 
 .saving span:nth-child(3) {
-
     animation-delay: .4s;
 }
