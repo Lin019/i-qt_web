@@ -1,6 +1,7 @@
 ﻿html, body {
     background-color: #FFEEDC;
     height: 100%;
+    font-family: Roboto, 'Microsoft JhengHei';
 }
 
 .container{
@@ -30,30 +31,25 @@ div ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    min-height: calc(100% - 48px);
+    min-height: calc(100% - 43px);
 }
 
 div ul li{
     display: inline-block;
-    width: 60%;
-    padding-bottom: 15px;
+    width: 80%;
+    padding-bottom: 10px;
 }
 
+div ul li.chat-reply {
+    width: 90%;
+}
 ul form {
     height: auto;
     overflow: hidden;
     clear: both;
 }
 
-table img {
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
 .bubble img {
-    -webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
 
@@ -108,16 +104,98 @@ table img {
 }
 
 .bubble p,
-.bubble a {
+.option a{
     display: block;
     margin:2px;
     word-break:break-all;
     font-size: 16px;
 }
 
-.bubble-reply table td {
-	text-align: center;
-	border-bottom: 2px #eee solid;
+
+/* table */
+
+.right {
+    float: right;
+}
+
+table h3 {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+table h4 {
+    margin: 0;
+    font-size: 10px;
+    color: #777;
+}
+
+table tr {
+    border-bottom: 2px #eee solid;
+    
+    width: 97%;
+}
+.bottom-aligner {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+table tr.no-border {
+    border: none;
+}
+tr.no-border td.first {
+    width: 400px;
+}
+
+table tr:last-child {
+    border: 0;
+}
+table tr td{
+    padding: 10px;
+    width:auto;
+    max-width:400px;
+}
+
+table li {
+    padding-bottom: 2px;
+}
+
+.bg{
+    position: relative;
+    height: 100px;
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/airplane.jpg') no-repeat scroll center top;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+table td.pic {
+    height: 100px;
+    width: 400px;
+    padding: 0;
+}
+table td.pic h3, table td.pic h4{
+    color: #FFF;
+    padding-left: 10px;
+    margin-bottom: 6px;
+}
+table td.pic a {
+    color: #fff;
+}
+
+ul.header li{
+    width: 100%;
+    padding: 0;
+    min-height: 0;
+}
+
+table a {
+    margin: 2px;
+    margin-right: 10px;
+    float: right;
+    font-size: 14px;
 }
 
 /*option*/
@@ -125,7 +203,7 @@ table img {
     width: 100%;
     height: auto; 
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .bubble-option {
@@ -191,8 +269,7 @@ form {
     width: 100%;
 }
 
-/**/
-
+/* animation */
 
 @keyframes blink {
     0% { opacity: .2; }

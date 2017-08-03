@@ -6,13 +6,15 @@
 */
 $(function () {
 
+    
+
     $("#home").click(function () {
         window.location.href = 'SynonymCreate.html';
     })
 
     //Add chat bubble and reply
     $(".submit").click(function () {
-
+        
         var innerHtml = "<li class =\"chat-user\"><span class=\"bubble bubble-user\"><p>hi</p></span></li>"
         var inputText = $(".textbox").val();
 
@@ -22,7 +24,7 @@ $(function () {
                 $("ul li.chat-user:after").last().insertAfter(innerHtml);
             }
             else {
-                $("ul").append(innerHtml);
+                $("ul#chat").append(innerHtml);
             }
             $(".chat-area .chat-user p").last().text(inputText);
             $(".textbox").val("");
@@ -46,27 +48,31 @@ $(function () {
         var loadingHtml = "<div class=\"flex\"><span class=\"bubble bubble-reply\"><p class=\"saving\"><span>．</span><span>．</span><span>．</span></p></span></div>"
 
         setTimeout(function () {
-            $("ul").append(replyHtml);
-            $("ul li.chat-reply").last().append(loadingHtml);
+            $("ul#chat").append(replyHtml);
+            $("ul#chat li.chat-reply").last().append(loadingHtml);
             scrollToBottom();
         }, 1000);
     }
 
     //reply after user clicked one of the option
     function replyForm(food) {
-        var replyHtml = "<form><table></table></form>"
+        var replyHtml = "<form><table></table><div class=\"bg\"></form>"
 
         setTimeout(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
+            $("ul li .bubble-reply").last().css({
+                "padding": "0"
+            });
 
-            if (food == "coffee")
-                $(".chat-area table").last().html("<tr><td><img src=\"Images/food_coffee_beans.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
-            else if (food == "strawberry")
-                $(".chat-area table").last().html("<tr><td><img src=\"Images/food_strawberry.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
+            if (food == "查動態")
+                $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li></ul></div></div></td></tr><tr><td><h3>CI006 17:00 ✈ 13:40</h3><h4>尚有空位</h4></td></tr></div>");
+            else if (food == "查航班")
+                $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li><li><a href=\"#\">選擇其他航班</a></li></ul></div></div></td></tr><tr><td><h3>CI156 08:10->11:40</h3><h4>準時 尚有空位 $5000</h4></td></tr><tr><td><h3>CI152 09:50->13:20</h3><h4>準時 尚有空位 $5000</h4></td></tr>");
             else
-                $(".chat-area table").last().html("<tr><td><img src=\"Images/food_bread.jpg\"></td></tr><tr><td><a href=\"#\">check</a></td></tr><tr><td><a href=\"#\">cancel</a></td></tr>");
-
+                $(".chat-area table").last().html("<tr class=\"no-border\"><td class=\"first\"><h3>CI006 TPE ✈ LAX 2017/07/20 17:00<h3><h4>旅客: WANG XIAOMIN<h4></td></tr><tr class=\"no-border\"><td class=\"right\"><a href=\"#\">退票</a><a href=\"#\">更改班次</a></td></tr>");
+            
+           // $("table td.pic a").css("margin-left", $(".bg").width() - $("table td.pic a").width() -15 + "px");
             scrollToBottom();
         }, 3000);
     }
@@ -74,14 +80,12 @@ $(function () {
     //reply the same as user
     function reply(replyText) {
         var replyHtml = "<p></p>"
-
         setTimeout(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
             $(".chat-area p").last().text(replyText);
-            scrollToBottom();
-
         }, 3000);
+        scrollToBottom();
     }
 
     //reply if user enter "search"
@@ -101,7 +105,7 @@ $(function () {
     if ($(".option a").click(function () {
 
         var innerHtml = "<li class =\"chat-user\"><span class=\"bubble bubble-user\"><p>hi</p></span></li>"
-        $("ul").append(innerHtml);
+        $("ul#chat").append(innerHtml);
         $(".chat-area .chat-user p").last().text($(this).text());
 
         toggleOption(false);

@@ -23,7 +23,7 @@ namespace WebApplication2.Controllers
             Adult = 2,
             Child = 0
         };
-
+         
         public ActionResult Index()
         {
             return View();
