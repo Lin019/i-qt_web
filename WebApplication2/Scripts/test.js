@@ -42,24 +42,25 @@ $(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
             $("ul li .bubble-reply").last().css({
-                "padding": "0"
+                "padding": "0",
+                "padding-right": "1px"
             });
 
             if (food == "查動態") {
                 $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li></ul></div></div></td></tr><tr><td><h3>CI006 17:00 ✈ 13:40</h3><h4>尚有空位</h4></td></tr></div>");
 
-                $(".chat-area table .header h4").text(data[1]);
+                $(".chat-area table .header h4").last().text(data[1]);
                 $(".chat-area table tr h3").last().text(data[0] + " 17:00 ✈ 13:40");
             }
             else if (food == "查航班") {
                 $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li><li><a class=\"choose-flight\" href=\"#\">選擇其他航班</a></li></ul></div></div></td></tr><tr><td><h3>CI156 08:10->11:40</h3><h4>準時 尚有空位 $5000</h4></td></tr><tr><td><h3>CI152 09:50->13:20</h3><h4>準時 尚有空位 $5000</h4></td></tr>");
 
-                $(".chat-area table .header h3").text(data[0] + " ✈ " + data[1]);
-                $(".chat-area table .header h4").text(data[2]);
+                $(".chat-area table .header h3").last().text(data[0] + " ✈ " + data[1]);
+                $(".chat-area table .header h4").last().text(data[2]);
             }
             else {
                 $(".chat-area table").last().html("<tr class=\"no-border\"><td class=\"first\"><h3>CI006 TPE ✈ LAX 2017/07/20 17:00<h3><h4>旅客: WANG XIAOMIN</h4></td></tr><tr class=\"no-border\"><td class=\"right\"><a href=\"#\">退票</a><a href=\"#\">更改班次</a></td></tr>");
-                $(".chat-area table h4").text("旅客： " + data[1]);
+                $(".chat-area table h4").last().text("旅客： " + data[1]);
             }
             scrollToBottom();
             reset();
