@@ -51,6 +51,7 @@ $(function () {
             }
 
             if (instr == "查動態") {
+                
                 var delayHTML = "<tr><td style=\"width: 400px;\" class=\"first\" align=\"right\" colspan=\"6\"><h4 >航班狀態</h4><h4 class=\"red\">延誤</h4></td></tr><tr class=\"no-border\"><td colspan=\"2\"><h4>航班</h4><h4>CI511</h4></td><td align=\"center\" colspan=\"2\"><div class=\"cell-block\"><h4 class=\"left\">出發</h4><h4 class=\"red\">上午7:55</h4></div></td><td align=\"right\" colspan=\"2\"><div class=\"cell-block\"><h4 class=\"left\">抵達</h4><h4 class=\"red\">上午11:10</h4></div></td></tr><tr class=\"no-border\"><td colspan=\"3\"><h4>臺北(桃園)</h4></td><td align=\"right\" colspan=\"3\"><h4>北京</h4></td></tr><tr class=\"no-border flight-sign\"><td colspan=\"2\"><h2 class=\"blue\">TPE</h2></td> <td colspan=\"2\" align=\"center\"><h2 class=\"blue\">✈</h2></td> <td colspan=\"2\" align=\"right\"><h2 class=\"blue\">PEK</h2></td></tr>"
 
                 $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li></ul></div></div></td></tr><tr><td><h3>CI006 17:00 ✈ 13:40</h3><h4>尚有空位</h4></td></tr></div>");
@@ -63,12 +64,14 @@ $(function () {
                     $("ul#chat").append("<li class =\"chat-reply\"><span class=\"circle-transparent\"></span></li>");
                     $("ul#chat li.chat-reply").last().append("<div class=\"flex\"><span class=\"bubble bubble-reply\"></div>");
                     $("ul li .bubble-reply").last().html("");
+                    
                     $("ul li .bubble-reply").last().append(replyHtml);
                     $("ul li .bubble-reply").last().css({
                         "padding": "0",
                         "padding-right": "1px"
                     });
                     $(".chat-area table").last().html(delayHTML);
+                    $("ul li .bubble-reply table").last().addClass("delay");
                 }
                 else {
                     $(".chat-area table .header h4").last().text(data[1]);

@@ -123,7 +123,6 @@ ul form {
     font-size: 16px;
 }
 
-
 /* table */
 
 .right {
@@ -144,7 +143,6 @@ table h4 {
 
 table tr {
     border-bottom: 2px #eee solid;
-    
     width: 97%;
 }
 .bottom-aligner {
@@ -167,6 +165,14 @@ table tr td{
     padding-right: 0;
     width:auto;
     max-width:400px;
+}
+
+table.delay h4{
+    font-size: 14px;
+}
+
+table.delay td {
+    margin-right: 10px;
 }
 
 table li {
