@@ -10,6 +10,7 @@ $(function () {
     var data = [];
     var isOver = true;
     var testOver = true;
+    var isOrder = true;
 
     $("#home").click(function () {
         if (testOver)
@@ -117,6 +118,7 @@ $(function () {
             $("ul li .bubble-reply").last().append(replyHtml);
             $(".chat-area p").last().text(replyText);
             isOver = true;
+            if(replyText=="選擇此航班") isOrder = true;
         }, 3000);
         scrollToBottom();
     }
@@ -218,14 +220,18 @@ $(function () {
 
             loading();
 
-            if (inputText == "查航班" || inputText == "選擇其他航班") {
+            if (inputText == "查航班" || (inputText == "選擇其他航班" && isOrder )) {
                 reset();
                 state = "出發";
                 replyAsk();
             }
-            else if (inputText == "查動態") {
+            else if (inputText == "查動態" || (inputText == "選擇其他航班" && isOrder == false)) {
                 reset();
                 state = "班機";
+                if (inputText == "選擇其他航班") {
+                    isOrder = false;
+                    state = "更改";
+                }
                 replyAsk();
             }
             else if (inputText == "改訂位") {
@@ -240,6 +246,7 @@ $(function () {
             else if (inputText == "更改班次") {
                 reset();
                 state = "更改";
+                isOrder = false;
                 replyAsk();
             }
             else if (inputText == "退票") {
@@ -267,7 +274,10 @@ $(function () {
             }
             else if (state == "班機日期") {
                 data.push(inputText);
-                replyForm("查動態");
+                if (isOrder)
+                    replyForm("查動態");
+                else
+                    replyForm("更改航班");
             }
             else if (state == "代號") {
                 data.push(inputText);
@@ -345,28 +355,32 @@ $(function () {
         }
         else if (instr == "entire") {
             setTimeout(function () { input("查動態") }, 100);
-            setTimeout(function () { input("CI511") }, 3500);
-            setTimeout(function () { input("2017/8/9") }, 7000);
-            setTimeout(function () { input("查航班") }, 10500);
-            setTimeout(function () { input("桃園") }, 14000);
-            setTimeout(function () { input("大阪") }, 17500);
-            setTimeout(function () { input("2017/8/9") }, 21000);
-            setTimeout(function () { input("search") }, 24500);
-            setTimeout(function () { input("改訂位") }, 28000);
-            setTimeout(function () { input("AB1222") }, 31500);
-            setTimeout(function () { input("WANG XIAOMIN") }, 35000);
-            setTimeout(function () { input("更改班次") }, 38500);
-            setTimeout(function () { input("CI082") }, 42000);
-            setTimeout(function () { input("2017/10/10") }, 45500);
-            setTimeout(function () { input("選擇此航班") }, 49000);
-            setTimeout(function () { input("改訂位") }, 52500);
-            setTimeout(function () { input("AB1222") }, 56000);
-            setTimeout(function () { input("WANG XIAOMIN") }, 59500);
-            setTimeout(function () { input("退票") }, 63000);
-            setTimeout(function () { input("查動態") }, 66500);
-            setTimeout(function () { input("CI006") }, 70000);
-            setTimeout(function () { input("2017/8/15") }, 73500);
-            setTimeout(function () { input("結束測試"); testOver = true;}, 77000);
+            setTimeout(function () { input("CI511") }, 1*3500);
+            setTimeout(function () { input("2017/8/9") }, 2*3500);
+            setTimeout(function () { input("查航班") }, 3 * 3500);
+            setTimeout(function () { input("桃園") }, 4 * 3500);
+            setTimeout(function () { input("大阪") }, 5 * 3500);
+            setTimeout(function () { input("2017/8/9") }, 6 * 3500);
+            setTimeout(function () { input("search") }, 7 * 3500);
+            setTimeout(function () { input("改訂位") }, 8 * 3500);
+            setTimeout(function () { input("AB1222") }, 9 * 3500);
+            setTimeout(function () { input("WANG XIAOMIN") }, 10 * 3500);
+            setTimeout(function () { input("更改班次") }, 11 * 3500);
+            setTimeout(function () { input("CI082") }, 12 * 3500);
+            setTimeout(function () { input("2017/10/10") }, 13 * 3500);
+            setTimeout(function () { input("選擇其他航班") }, 14 * 3500);
+            setTimeout(function () { input("CI888") }, 15 * 3500);
+            setTimeout(function () { input("2017/9/8") }, 16 * 3500);
+            setTimeout(function () { input("選擇此航班") }, 17 * 3500);
+            setTimeout(function () { input("改訂位") }, 18 * 3500);
+            setTimeout(function () { input("AB1222") }, 19 * 3500);
+            setTimeout(function () { input("WANG XIAOMIN") }, 20 * 3500);
+            setTimeout(function () { input("退票") }, 21 * 3500);
+            setTimeout(function () { input("查動態") }, 22 * 3500);
+            setTimeout(function () { input("CI006") }, 23 * 3500);
+            setTimeout(function () { input("2017/8/15") }, 24 * 3500);
+
+            setTimeout(function () { input("結束測試"); testOver = true; }, 25 * 3500);
         }
         else if (instr == "rapid") {
             setTimeout(function () { input("查動態") }, 100);
