@@ -80,7 +80,7 @@ $(function () {
                         "padding-right": "1px"
                     });
                     $(".chat-area table").last().html(delayHTML);
-                    $("ul li .bubble-reply table").last().addClass("delay");
+                    $(".chat-area table").last().addClass("delay");
                 }
                 else {
                     $(".chat-area table .header h4").last().text(data[1]);
