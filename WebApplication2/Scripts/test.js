@@ -138,6 +138,10 @@ $(function () {
         input($(this).text());
     });
 
+    $(document).on('click', '#home', function () {
+        test();
+    });
+
     //user input
     function input(inputText) {
         var innerHtml = "<li class =\"chat-user\"><span class=\"bubble bubble-user\"><p>hi</p></span></li>"
@@ -251,4 +255,15 @@ $(function () {
             $(".submit").click();
         }
     });
+
+
+
+    function test() {
+
+
+        setTimeout(function () { input("查動態"); }, 100);
+        setTimeout(function () { input("CI511"); }, 3500);
+        setTimeout(function () { input("2017/08/09"); }, 7000);
+    }
+
 })
