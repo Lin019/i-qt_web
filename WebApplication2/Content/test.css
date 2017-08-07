@@ -84,16 +84,6 @@ ul form {
     background-color: #A0522D;
 }
 
-.circle-transparent {
-    float: left;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    margin-left: 10px;
-    border-radius: 15px;
-    background-color: transparent;
-}
-
 .bubble {
     border: 1.5px #666 solid;
     border-radius:10px;
@@ -162,7 +152,6 @@ table tr:last-child {
 }
 table tr td{
     padding: 10px;
-    padding-right: 0;
     width:auto;
     max-width:400px;
 }
@@ -239,7 +228,7 @@ table a {
 
 form {
     overflow: hidden;
-    height: 52px;
+    height: 51px;
     display: flex;
 }
 
@@ -247,7 +236,7 @@ form {
    margin: 0;
    border: none;
    width: 52px;
-   height: 52px;
+   height: 51px;
    display: flex;
    background-color: #86542B;
 }
@@ -313,33 +302,4 @@ form {
 
 a {
     text-decoration: none;
-}
-
-tr.flight-sign td {
-    padding-top: 0;
-}
-
-.cell-block {
-    clear: both;
-    text-align: left;
-    display:inline-block;
-    width:auto;
-    overflow: hidden;
-}
-
-.red {
-    color: red;
-}
-
-.left {
-    text-align: left;
-}
-
-h2 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.blue {
-    color: lightblue;
 }
