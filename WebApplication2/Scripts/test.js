@@ -9,9 +9,18 @@ $(function () {
     var state = "";
     var data = [];
     var isOver = true;
+    var testOver = true;
 
     $("#home").click(function () {
-
+        if (testOver)
+            test("entire");
+    })
+    $("#rapid").click(function () {
+        if(testOver)
+            test("rapid");
+    })
+    $("#stop").click(function () {
+        test("stop");
     })
 
     //Add chat bubble and reply
@@ -326,4 +335,43 @@ $(function () {
             $(".submit").click();
         }
     });
+
+
+    function test(instr) {
+        testOver = false;
+
+        if (instr == "stop") {
+            
+        }
+        else if (instr == "entire") {
+            setTimeout(function () { input("查動態") }, 100);
+            setTimeout(function () { input("CI511") }, 3500);
+            setTimeout(function () { input("2017/8/9") }, 7000);
+            setTimeout(function () { input("查航班") }, 10500);
+            setTimeout(function () { input("桃園") }, 14000);
+            setTimeout(function () { input("大阪") }, 17500);
+            setTimeout(function () { input("2017/8/9") }, 21000);
+            setTimeout(function () { input("search") }, 24500);
+            setTimeout(function () { input("改訂位") }, 28000);
+            setTimeout(function () { input("AB1222") }, 31500);
+            setTimeout(function () { input("WANG XIAOMIN") }, 35000);
+            setTimeout(function () { input("更改班次") }, 38500);
+            setTimeout(function () { input("CI082") }, 42000);
+            setTimeout(function () { input("2017/10/10") }, 45500);
+            setTimeout(function () { input("選擇此航班") }, 49000);
+            setTimeout(function () { input("改訂位") }, 52500);
+            setTimeout(function () { input("AB1222") }, 56000);
+            setTimeout(function () { input("WANG XIAOMIN") }, 59500);
+            setTimeout(function () { input("退票") }, 63000);
+            setTimeout(function () { input("查動態") }, 66500);
+            setTimeout(function () { input("CI006") }, 70000);
+            setTimeout(function () { input("2017/8/15") }, 73500);
+            setTimeout(function () { input("結束測試"); testOver = true;}, 77000);
+        }
+        else if (instr == "rapid") {
+            setTimeout(function () { input("查動態") }, 100);
+            setTimeout(function () { input("CI511") }, 1000);
+            setTimeout(function () { input("2017/8/9"); testOver = true; }, 2000);
+        }
+    }
 })
