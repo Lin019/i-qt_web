@@ -8,9 +8,10 @@ $(function () {
 
     var state = "";
     var data = [];
+    var isOver = true;
 
     $("#home").click(function () {
-        test();
+
     })
 
     //Add chat bubble and reply
@@ -39,12 +40,6 @@ $(function () {
         var replyHtml = "<form><table></table><div class=\"bg\"></form>"
 
         setTimeout(function () {
-            $("ul li .bubble-reply").last().html("");
-            $("ul li .bubble-reply").last().append(replyHtml);
-            $("ul li .bubble-reply").last().css({
-                "padding": "0",
-                "padding-right": "1px"
-            });
 
             if (data[0] != "CI511") {
                 $("ul li .bubble-reply").last().html("");
@@ -56,7 +51,7 @@ $(function () {
             }
 
             if (instr == "查動態") {
-                
+
                 var delayHTML = "<tr><td style=\"width: 400px;\" class=\"first\" align=\"right\" colspan=\"6\"><h4 >航班狀態</h4><h4 class=\"red\">延誤</h4></td></tr><tr class=\"no-border\"><td colspan=\"2\"><h4>航班</h4><h4>CI511</h4></td><td align=\"center\" colspan=\"2\"><div class=\"cell-block\"><h4 class=\"left\">出發</h4><h4 class=\"red\">上午7:55</h4></div></td><td align=\"right\" colspan=\"2\"><div class=\"cell-block\"><h4 class=\"left\">抵達</h4><h4 class=\"red\">上午11:10</h4></div></td></tr><tr class=\"no-border\"><td colspan=\"3\"><h4>臺北(桃園)</h4></td><td align=\"right\" colspan=\"3\"><h4>北京</h4></td></tr><tr class=\"no-border flight-sign\"><td colspan=\"2\"><h2 class=\"blue\">TPE</h2></td> <td colspan=\"2\" align=\"center\"><h2 class=\"blue\">✈</h2></td> <td colspan=\"2\" align=\"right\"><h2 class=\"blue\">PEK</h2></td></tr>"
 
                 $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li></ul></div></div></td></tr><tr><td><h3>CI006 17:00 ✈ 13:40</h3><h4>尚有空位</h4></td></tr></div>");
@@ -69,7 +64,7 @@ $(function () {
                     $("ul#chat").append("<li class =\"chat-reply\"><span class=\"circle-transparent\"></span></li>");
                     $("ul#chat li.chat-reply").last().append("<div class=\"flex\"><span class=\"bubble bubble-reply\"></div>");
                     $("ul li .bubble-reply").last().html("");
-                    
+
                     $("ul li .bubble-reply").last().append(replyHtml);
                     $("ul li .bubble-reply").last().css({
                         "padding": "0",
@@ -82,7 +77,6 @@ $(function () {
                     $(".chat-area table .header h4").last().text(data[1]);
                     $(".chat-area table tr h3").last().text(data[0] + " 17:00 ✈ 13:40");
                 }
-
             }
             else if (instr == "查航班") {
                 $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li><li><a class=\"choose-flight\" href=\"#\">選擇其他航班</a></li></ul></div></div></td></tr><tr><td><h3>CI156 08:10->11:40</h3><h4>準時 尚有空位 $5000</h4></td></tr><tr><td><h3>CI152 09:50->13:20</h3><h4>準時 尚有空位 $5000</h4></td></tr>");
@@ -90,12 +84,19 @@ $(function () {
                 $(".chat-area table .header h3").last().text(data[0] + " ✈ " + data[1]);
                 $(".chat-area table .header h4").last().text(data[2]);
             }
+            else if (instr == "更改航班") {
+                $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li><li><a class=\"choose-flight\" href=\"#\">選擇其他航班</a></li></ul></div></div></td></tr><tr><td><h3>CI006 17:00 ✈ 13:40</h3><h4>尚有空位</h4><a class=\"choose-flight\" href=\"#\">選擇此航班</a></td></tr></div>");
+
+                $(".chat-area table .header h4").last().text(data[1]);
+                $(".chat-area table tr h3").last().text(data[0] + " 17:00 ✈ 13:40");
+            }
             else {
-                $(".chat-area table").last().html("<tr class=\"no-border\"><td class=\"first\"><h3>CI006 TPE ✈ LAX 2017/07/20 17:00<h3><h4>旅客: WANG XIAOMIN</h4></td></tr><tr class=\"no-border\"><td class=\"right\"><a href=\"#\">退票</a><a href=\"#\">更改班次</a></td></tr>");
+                $(".chat-area table").last().html("<tr class=\"no-border\"><td class=\"first\"><h3>CI006 TPE ✈ LAX 2017/07/20 17:00<h3><h4>旅客: WANG XIAOMIN</h4></td></tr><tr class=\"no-border\"><td class=\"right\"><a class=\"cancel-flight\" href=\"#\">退票</a><a class=\"change-flight\" href=\"#\">更改班次</a></td></tr>");
                 $(".chat-area table h4").last().text("旅客： " + data[1]);
             }
             scrollToBottom();
             reset();
+            isOver = true;
         }, 3000);
     }
 
@@ -106,6 +107,7 @@ $(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
             $(".chat-area p").last().text(replyText);
+            isOver = true;
         }, 3000);
         scrollToBottom();
     }
@@ -117,10 +119,11 @@ $(function () {
         setTimeout(function () {
             $("ul li .bubble-reply").last().html("");
             $("ul li .bubble-reply").last().append(replyHtml);
-            $(".chat-area p").last().text("請問你要查些什麼呢？");
+            $(".chat-area .bubble-reply p").last().text("請問你要查些什麼呢？");
             var options = ["查動態", "查航班", "改訂位"];
             toggleOption(true, options);
             scrollToBottom();
+            isOver = true;
         }, 3000);
     }
 
@@ -132,32 +135,39 @@ $(function () {
             $("ul li .bubble-reply").last().append(replyHtml);
 
             if (state == "出發") {
-                $(".chat-area p").last().text("您想從哪裡出發？");
+                $(".chat-area .bubble-reply p").last().text("您想從哪裡出發？");
                 var options = ["桃園", "大阪", "北京", "洛杉磯"];
                 toggleOption(true, options);
             }
             else if (state == "飛往") {
-                $(".chat-area p").last().text("您想飛往哪一個機場？");
+                $(".chat-area .bubble-reply p").last().text("您想飛往哪一個機場？");
                 var options = ["桃園", "大阪", "北京", "洛杉磯"];
                 toggleOption(true, options);
             }
             else if (state == "日期") {
-                $(".chat-area p").last().text("您要查哪一天的航班？(例: 2017/4/1)");
+                $(".chat-area .bubble-reply p").last().text("您要查哪一天的航班？(例: 2017/4/1)");
             }
             else if (state == "班機") {
-                $(".chat-area p").last().text("請輸入班機代號(ex:CI006)，我來為您查詢。");
+                $(".chat-area .bubble-reply p").last().text("請輸入班機代號(ex:CI511)，我來為您查詢。");
             }
             else if (state == "班機日期") {
-                $(".chat-area p").last().text("請輸入日期");
-            }          
+                $(".chat-area .bubble-reply p").last().text("請輸入日期");
+            }
             else if (state == "代號") {
-                $(".chat-area p").last().text("請問您有「訂位代號」或是「機票號碼」嗎？需要其中一項資料我才能為您變更定位喔！ (訂位代號ex：AB1222；機票號碼ex：123456789012345)");
+                $(".chat-area .bubble-reply p").last().text("請問您有「訂位代號」或是「機票號碼」嗎？需要其中一項資料我才能為您變更定位喔！ (訂位代號ex：AB1222；機票號碼ex：123456789012345)");
             }
             else if (state == "名字") {
-                $(".chat-area p").last().text("好的，跟您確認一下旅客姓名拼音？ (ex:WANG XIAOMIN)");
+                $(".chat-area .bubble-reply p").last().text("好的，跟您確認一下旅客姓名拼音？ (ex:WANG XIAOMIN)");
+            }
+            else if (state == "更改") {
+                $(".chat-area .bubble-reply p").last().text("請問您想要顯示哪個航班呢？ (ex:CI006)");
+            }
+            else if (state == "更改日期") {
+                $(".chat-area .bubble-reply p").last().text("請輸入日期");
             }
             //toggleOption(true);
             scrollToBottom();
+            isOver = true;
         }, 3000);
     }
 
@@ -170,19 +180,35 @@ $(function () {
         input($(this).text());
     });
 
+    $(document).on('click', 'a.change-flight', function () {
+        input($(this).text());
+    });
+
+    $(document).on('click', 'a.cancel-flight', function () {
+        input($(this).text());
+    });
+
     //user input
     function input(inputText) {
         var innerHtml = "<li class =\"chat-user\"><span class=\"bubble bubble-user\"><p>hi</p></span></li>"
-        $("ul#chat").append(innerHtml);
+
+        if (isOver)
+            $("ul#chat").append(innerHtml);
+        else
+            $(innerHtml).insertAfter("li.chat-user:last");
+
         $(".chat-area .chat-user p").last().text(inputText);
         toggleOption(false, []);
 
-        if (inputText != "") {
+        scrollToBottom();
 
+        if (inputText != "" && isOver) {
+
+            isOver = false;
             scrollToBottom();
 
             loading();
-            
+
             if (inputText == "查航班" || inputText == "選擇其他航班") {
                 reset();
                 state = "出發";
@@ -202,6 +228,15 @@ $(function () {
                 reset();
                 replySearch();
             }
+            else if (inputText == "更改班次") {
+                reset();
+                state = "更改";
+                replyAsk();
+            }
+            else if (inputText == "退票") {
+                reset();
+                reply("退票成功！");
+            }
             else if (state == "出發") {
                 data.push(inputText);
                 state = "飛往";
@@ -215,7 +250,6 @@ $(function () {
             else if (state == "日期") {
                 data.push(inputText);
                 replyForm("查航班");
-
             }
             else if (state == "班機") {
                 data.push(inputText);
@@ -234,6 +268,15 @@ $(function () {
             else if (state == "名字") {
                 data.push(inputText);
                 replyForm("改訂位");
+            }
+            else if (state == "更改") {
+                data.push(inputText);
+                state = "更改日期";
+                replyAsk();
+            }
+            else if (state == "更改日期") {
+                data.push(inputText);
+                replyForm("更改航班");
             }
             else
                 reply(inputText);
@@ -259,12 +302,12 @@ $(function () {
             $(".option").append(optionHtml);
             $(".option a").eq(i).text(arguments[1][i]);
         }
-        
+
 
         if (flag)
             $(".option").removeClass("hide");
         else {
-            if(!$(".option").hasClass("hide")) $(".option").addClass("hide");
+            if (!$(".option").hasClass("hide")) $(".option").addClass("hide");
         }
     }
 
@@ -283,15 +326,4 @@ $(function () {
             $(".submit").click();
         }
     });
-
-
-
-    function test() {
-
-
-        setTimeout(function () { input("查動態"); }, 100);
-        setTimeout(function () { input("CI511"); }, 3500);
-        setTimeout(function () { input("2017/08/09"); }, 7000);
-    }
-
 })
