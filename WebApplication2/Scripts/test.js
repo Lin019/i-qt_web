@@ -10,7 +10,7 @@ $(function () {
     var data = [];
 
     $("#home").click(function () {
-        
+        test();
     })
 
     //Add chat bubble and reply
@@ -35,7 +35,7 @@ $(function () {
     }
 
     //reply after user clicked one of the option
-    function replyForm(food) {
+    function replyForm(instr) {
         var replyHtml = "<form><table></table><div class=\"bg\"></form>"
 
         setTimeout(function () {
@@ -46,7 +46,6 @@ $(function () {
                 "padding-right": "1px"
             });
 
-<<<<<<< HEAD
             if (data[0] != "CI511") {
                 $("ul li .bubble-reply").last().html("");
                 $("ul li .bubble-reply").last().append(replyHtml);
@@ -83,15 +82,9 @@ $(function () {
                     $(".chat-area table .header h4").last().text(data[1]);
                     $(".chat-area table tr h3").last().text(data[0] + " 17:00 ✈ 13:40");
                 }
-=======
-            if (food == "查動態") {
-                $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li></ul></div></div></td></tr><tr><td><h3>CI006 17:00 ✈ 13:40</h3><h4>尚有空位</h4></td></tr></div>");
 
-                $(".chat-area table .header h4").last().text(data[1]);
-                $(".chat-area table tr h3").last().text(data[0] + " 17:00 ✈ 13:40");
->>>>>>> c88953169b623be687366e1bb6c08996cf54c6d0
             }
-            else if (food == "查航班") {
+            else if (instr == "查航班") {
                 $(".chat-area table").last().html("<tr><td class=\"pic\"><div class=\"bg\"><div class=\"bottom-aligner\"><ul class=\"header\"><li><h3>TPE ✈ KIX</h3><h4>2017/08/01</h4></li><li><a class=\"choose-flight\" href=\"#\">選擇其他航班</a></li></ul></div></div></td></tr><tr><td><h3>CI156 08:10->11:40</h3><h4>準時 尚有空位 $5000</h4></td></tr><tr><td><h3>CI152 09:50->13:20</h3><h4>準時 尚有空位 $5000</h4></td></tr>");
 
                 $(".chat-area table .header h3").last().text(data[0] + " ✈ " + data[1]);
@@ -175,10 +168,6 @@ $(function () {
 
     $(document).on('click', 'a.choose-flight', function () {
         input($(this).text());
-    });
-
-    $(document).on('click', '#home', function () {
-        test();
     });
 
     //user input
