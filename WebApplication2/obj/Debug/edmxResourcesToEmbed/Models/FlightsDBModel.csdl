@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Flights1Set" EntityType="Model.Flights1" />
+  </EntityContainer>
+  <EntityType Name="Flights1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" annotation:StoreGeneratedPattern="None" Nullable="false" />
+    <Property Name="flightCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="departureAirport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="arrivalAirport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="departureDateTime" Type="DateTime" Precision="3" />
+    <Property Name="arrivalDateTime" Type="DateTime" Precision="3" />
+    <Property Name="flightStats" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="seat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Int32" />
+  </EntityType>
+</Schema>

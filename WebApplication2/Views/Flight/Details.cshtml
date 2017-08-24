@@ -1,0 +1,90 @@
+﻿@model WebApplication2.Models.Flight
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Flight</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.flightCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flightCode)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.departureAirport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.departureAirport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.arrivalAirport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.arrivalAirport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.departureDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.departureDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.arrivalDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.arrivalDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.flightStats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flightStats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
